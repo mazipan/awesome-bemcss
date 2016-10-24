@@ -1,0 +1,43 @@
+$buttonVariansName: green, red, blue, orange, gray;
+$buttonVariansHex: $green, $red, $blue, $orange, $grey;
+$buttonVariansHover: $greenLight, $redLight, $blueLight, $orangeLight, $greyLight;
+$buttonVariansFont: $white, $white, $white, $white, $black;
+
+%button
+{
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            background: nth($buttonVariansHex, $i);
+            color: nth($buttonVariansFont, $i);
+
+            &:hover
+            {
+                background: nth($buttonVariansHover, $i);
+                color: nth($buttonVariansFont, $i);
+                text-decoration: none;
+            }
+        }
+    }
+    @for $j from 1 through length($buttonVariansName) {  
+        &-outline--#{nth($buttonVariansName, $j)} {
+            border: 1px solid nth($buttonVariansHex, $j); 
+            background: $white; 
+            color: nth($buttonVariansHex, $j);
+
+            &:hover
+            {
+                text-decoration: none;
+            }
+        }
+    }
+
+    display: inline-block;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+}
