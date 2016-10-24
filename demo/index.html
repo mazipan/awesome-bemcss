@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta name="robots" content="index, follow"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>AwesomeBemCSS | Simple CSS Framework Using BEM Methodology</title>
+
+        <meta name="language" content="id-ID"/>
+        <meta name="author" content="Irfan Maulana"/>
+
+        <link rel="author" href="https://plus.google.com/u/0/+irfanmaulana-mazipan/posts"/>
+        <link rel="publisher" href="https://plus.google.com/u/0/+irfanmaulana-mazipan"/>
+
+        <meta property="og:title" content="AwesomeBemCSS" />        
+        <meta property="og:description" content="Simple CSS Framework Using BEM Methodology"/>        
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@maz_ipan"/>
+        <meta name="twitter:creator" content="@maz_ipan"/>
+        <meta name="twitter:title" content="AwesomeBemCSS"/>
+        <meta name="twitter:description" content="Simple CSS Framework Using BEM Methodology"/>
+        
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"> 
+        <link rel="stylesheet" type="text/css" href="../dist/demo.css"> 
+
+</head>
+<body class="site">
+
+  <header role="header" class="site__header header" id="header">
+  		<div class="header__wrapper">
+  			<div class="header__brand">
+  				<img src="./images/brand.png" />
+          <div class="header__title">
+            AwesomeBemCSS
+          </div>
+  			</div>
+      </div>
+  </header>
+
+  <main role="main" class="site__main main" id="main">
+      <div class="main__title">
+        <h1>AwesomeBemCSS 
+          <small>(demo and cheatsheet)</small>
+        </h1>
+      </div>
+  		<nav role="nav" class="main__nav nav" id="nav">
+        <ul class="nav__tabs tabs">
+            <li class="tabs__item tabs__item--active" data-target="#overview">
+              <a href="#overview">Overview</a>
+            </li>
+            <li class="tabs__item" data-target="#typography">
+              <a href="#typography">Typography</a>
+            </li>
+            <li class="tabs__item" data-target="#grids">
+              <a href="#grids">Grids</a>
+            </li>
+            <li class="tabs__item" data-target="#buttons">
+              <a href="#buttons">Buttons</a>
+            </li>
+            <li class="tabs__item" data-target="#forms">
+              <a href="#forms">Forms</a>
+            </li>
+        </ul>
+      </nav>
+
+      <article class="main__content content" id="content">
+        <section class="content__overview" id="overview">
+          <h2>Overview</h2>
+          <p>
+            Actually, BEM is just methodology or convention in css naming.<br>
+            You free to express your way to write BEM CSS.<br>
+            The Goals is to make HTML more readable and more semantic.<br>
+            I built AwesomeBEMCSS to show you how to handling BEM.<br>
+          </p>
+        </section>
+
+        <section class="content__typography" id="typography">
+          <h2 class="content__title">Typography</h2>
+          <div class="content__wrapper">
+            <div class="content__col-sm">              
+              <h4>Heading</h4>
+              <h1>h1</h1>
+              <h2>h2</h2>
+              <h3>h3</h3>
+              <h4>h4</h4>
+              <h5>h5</h5>
+            </div>
+            <div class="content__col-lg">
+                <h4>Paragraph</h4>
+                <p>
+                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit autocomplete Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                </p>
+
+                <h4>Blockquote</h4>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote>
+
+              </div>
+            </div>
+            <div class="content__col-sm">
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="content__grids" id="grids">
+          <h2 class="content__title">Grids</h2>
+          <div class="content__wrapper grids">
+            <div class="grids__row">row (total col in row = 16)</div>
+            <div class="grids__row">
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-1">col-1</div>
+            </div>           
+            <div class="grids__row">
+              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-2">col-2</div>
+              <div class="grids__col-3">col-3</div>
+              <div class="grids__col-10">col-10</div>
+            </div>
+            <div class="grids__row">
+              <div class="grids__col-offset-1">col-offset-1</div>
+            </div>
+            <div class="grids__row">
+              <div class="grids__col-offset-2">col-offset-2</div>
+            </div>
+            <div class="grids__row">
+              <div class="grids__col-offset-3">col-offset-3</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content__buttons" id="buttons">
+          <h2 class="content__title">Buttons</h2>
+          <h4>Button</h4>
+          <div class="content__wrapper">
+            <button class="button button--green">button--green</button>
+            <button class="button button--red">button--red</button>
+            <button class="button button--blue">button--blue</button>
+            <button class="button button--orange">button--orange</button>
+            <button class="button button--gray">button--gray</button>
+          </div>
+
+          <h4>Button Link</h4>
+          <div class="content__wrapper">
+            <a href="javascript:void(0)" class="button button--green">button--green</a>
+            <a href="javascript:void(0)" class="button button--red">button--red</a>
+            <a href="javascript:void(0)" class="button button--blue">button--blue</a>
+            <a href="javascript:void(0)" class="button button--orange">button--orange</a>
+            <a href="javascript:void(0)" class="button button--gray">button--gray</a>
+          </div>
+
+          <h4>Buttons Outline</h4>
+          <div class="content__wrapper">
+            <button class="button button-outline--green">button-outline--green</button>
+            <button class="button button-outline--red">button-outline--red</button>
+            <button class="button button-outline--blue">button-outline--blue</button>
+            <button class="button button-outline--orange">button-outline--orange</button>
+            <button class="button button-outline--gray">button-outline--gray</button>
+          </div>
+
+          <h4>Button Radius</h4>
+          <div class="content__wrapper">
+            <button class="button button-radius--green">button-radius--green</button>
+            <button class="button button-radius--red">button-radius--red</button>
+            <button class="button button-radius--blue">button-radius--blue</button>
+            <button class="button button-radius--orange">button-radius--orange</button>
+            <button class="button button-radius--gray">button-radius--gray</button>
+          </div>
+        </section>
+
+        <section class="content__forms" id="forms">
+          <h2 class="content__title">Forms</h2>
+          <h4>Checkboxes</h4>
+          <div class="content__wrapper">
+            <input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/>
+            <label for="checkbox-1">Check 1</label>
+            <input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/>
+            <label for="checkbox-2">Check 2</label>
+            <input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/>
+            <label for="checkbox-3">Check 3</label>
+          </div>
+
+          <h4>Radio</h4>
+          <div class="content__wrapper">
+            <input class="radio" type="radio" id="radio-1" name="radio"/>
+            <label for="radio-1">Yes</label>
+            <input class="radio" type="radio" id="radio-2" name="radio"/>
+            <label for="radio-2">No</label>     
+          </div>
+          <div class="content__wrapper">
+            <input class="radio radio--blue" type="radio" id="radio-3" name="radio-blue"/>
+            <label for="radio-3">Yes</label>
+            <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
+            <label for="radio-4">No</label>       
+          </div>
+        </section>
+
+      </article>
+  </main>
+
+  <footer role="footer" class="site__footer footer" id="footer">
+  	<div class="footer__wrapper">
+
+  		<div class="footer__text">
+  			<span>Crafted with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by Irfan Maulana</span>
+  		</div>
+
+  		<ul class="footer__list">
+  			<li class="footer__icon">
+  				<a rel="nofollow" href="https://www.facebook.com/mazipanneh">
+  					<i class="fa fa-facebook-official"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon">
+  				<a rel="nofollow" href="https://twitter.com/Maz_Ipan">
+  					<i class="fa fa-twitter"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon">
+  				<a rel="nofollow" href="https://instagram.com/maz_ipan">
+  					<i class="fa fa-instagram"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon">
+  				<a rel="nofollow" href="https://id.linkedin.com/in/irfanmaulanamazipan">
+  					<i class="fa fa-linkedin"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon">
+  				<a rel="nofollow" href="https://www.slideshare.net/IrfanMaulana21">
+  					<i class="fa fa-slideshare"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon">
+  				<a rel="nofollow" href="https://github.com/mazipan">
+  					<i class="fa fa-github"></i>
+  				</a>
+  			</li>
+  			<li class="footer__icon">
+  				<a rel="nofollow" href="https://mazipanneh.wordpress.com/">
+  					<i class="fa fa-wordpress"></i>
+  				</a>
+  			</li>
+  		</ul>
+
+      <div class="footer__text">
+        <span>Copyright © 2016</span>
+      </div>
+
+  	</div>
+  </footer>
+
+  <script src="./libs/jquery.min.js"></script>
+  <script src="../src/awesome-bemcss.js"></script>
+
+</body>
+</html>

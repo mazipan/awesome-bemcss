@@ -1,0 +1,244 @@
+@import "_awesome-bemcss";
+
+/*
+-- SITE BLOCK --
+* every block should in seperate file 
+* for demo I combine into one file
+*/
+.site
+{
+    margin: 0;
+
+    &__main
+    {
+        margin-top: 60px;
+        @extend %row;
+    }
+}
+
+/*
+-- MAIN BLOCK --
+*/
+.main
+{
+	&__title{
+		@extend %row;
+	}
+    &__nav
+    {
+    	@extend %col-2;
+    }
+    &__content
+    {
+    	@extend %col-14;
+    	padding: 20px;
+    }
+}
+
+/*
+-- HEADER BLOCK --
+*/
+
+.header
+{
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.075));
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    background: rgba(255,255,255,.95294);
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__brand
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .2em;
+
+        img
+        {
+            width: 50px;
+            @include border-radius(3px);
+        }
+    }
+    &__title{
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-left: .5em;
+    }
+}
+
+/*
+-- NAVIGATION BLOCK --
+*/
+.nav{
+	&__tabs{
+		@extend %tabs;
+	}
+}
+
+/*
+-- TABS BLOCK --
+*/
+.tabs{
+	&__item{
+		@extend %tabs__item--vertical;
+
+		&--active{
+			@extend %tabs__item--vertical--active;
+		}
+	}
+}
+
+
+/*
+-- CONTENT BLOCK --
+*/
+.content{
+	&__title{
+		padding: 7px 0;
+		border-bottom: 1px solid $grey;
+	}
+	&__wrapper{
+		@extend %row;
+		padding: 10px 0;
+	}
+	&__col-sm{
+		@extend %col-3;
+	}
+	&__col-lg{
+		@extend %col-10;
+	}
+}
+
+/*
+-- GRIDS BLOCK --
+*/
+.grids{
+	&__row{
+		@extend %row;    
+		border: 1px solid $grey;
+    	padding: 10px;
+    	margin: 2px 0;
+	}
+	&__col-1{
+		@extend %col-1;
+		border: 1px solid $grey;
+    	padding: 10px;
+	}
+	&__col-2{
+		@extend %col-2;
+		border: 1px solid $grey;
+    	padding: 10px;
+	}
+	&__col-3{
+		@extend %col-3;
+		border: 1px solid $grey;
+    	padding: 10px;
+	}
+	&__col-10{
+		@extend %col-10;
+		border: 1px solid $grey;
+    	padding: 10px;
+	}
+
+	&__col-offset-1{
+		@extend %col-offset-1;
+		border: 1px solid $grey;
+    	padding: 10px;
+	}
+	&__col-offset-2{
+		@extend %col-offset-2;
+		border: 1px solid $grey;
+    	padding: 10px;
+	}
+	&__col-offset-3{
+		@extend %col-offset-3;
+		border: 1px solid $grey;
+    	padding: 10px;
+	}
+}
+
+
+/*
+-- BUTTON BLOCK --
+*/
+.button{
+	@extend %button;
+
+	@for $i from 1 through length($buttonVariansName) { 
+		&--#{nth($buttonVariansName, $i)} {
+			@extend %button--#{nth($buttonVariansName, $i)};
+		}
+		&-outline--#{nth($buttonVariansName, $i)} {
+			@extend %button-outline--#{nth($buttonVariansName, $i)};
+		}
+		&-radius--#{nth($buttonVariansName, $i)} {
+			@include border-radius(.25em); 
+			@extend %button--#{nth($buttonVariansName, $i)};
+		}
+	}
+}
+
+/*
+-- CHECKBOXES
+*/
+.checkbox{
+	@extend %checkbox;
+}
+
+/*
+-- RADIO
+*/
+.radio{
+	@extend %radio;
+	&--blue{
+		@extend %radio--blue;
+	}
+}
+
+/*
+-- FOOTER BLOCK --
+*/
+.footer
+{
+    margin: 0 auto;
+    padding: 20px 0;
+    background: $blackLight;
+    color: #fff;
+
+    &__wrapper
+    {
+        text-align: center;
+    }
+    &__text
+    {
+        font-size: .9rem;
+    }
+    &__list
+    {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__icon
+    {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 1.6rem;
+
+        i
+        {
+            color: #fff;
+        }
+    }
+}
