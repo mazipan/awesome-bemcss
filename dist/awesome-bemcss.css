@@ -694,23 +694,37 @@ blockquote {
   .radio--blue + label:before, .radio--blue + label:after {
     color: #068AC9; }
 
-.tabs__item--vertical {
-  display: block;
-  margin: .2em 0; }
-  .tabs__item--vertical a {
+.tabs__item {
+  display: inline-block; }
+  .tabs__item a {
     position: relative;
     display: block;
     padding: 10px 15px;
-    text-decoration: none;
-    background-color: #eaeaea; }
-    .tabs__item--vertical a:hover {
+    text-decoration: none; }
+    .tabs__item a:hover {
+      background-color: #eaeaea; }
+  .tabs__item--active {
+    border-bottom: 2px solid #068AC9; }
+    .tabs__item--active a {
+      color: black; }
+
+.tabs__itemv {
+  display: block;
+  margin: .2em 0; }
+  .tabs__itemv a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    background-color: #eaeaea;
+    text-decoration: none; }
+    .tabs__itemv a:hover {
       background-color: #d0d0d0; }
-  .tabs__item--vertical--active {
-    background-color: #d0d0d0;
-    border-left: 2px solid #068AC9; }
-    .tabs__item--vertical--active a {
+  .tabs__itemv--active {
+    border-left: 2px solid #068AC9;
+    background-color: #d0d0d0; }
+    .tabs__itemv--active a {
       background-color: #d0d0d0;
-      color: #1a1a1a; }
+      color: black; }
 
 .textfield {
   padding: 6px 12px;
