@@ -120,7 +120,8 @@
         </section>
 
         <section class="content__grids" id="grids">
-          <h2 class="content__title">Grids</h2>
+          <h2 class="content__title">Grids</h2>          
+          <h4>Row And Columns</h4>
           <div class="content__wrapper grids">
             <div class="grids__row">row (total col in row = 16)</div>
             <div class="grids__row">
@@ -155,6 +156,16 @@
             </div>
             <div class="grids__row">
               <div class="grids__col-offset-3">col-offset-3</div>
+            </div>
+          </div>
+
+          <h4>Flex Box</h4>
+          <div class="content__wrapper">            
+            <div class="grids__flex">
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
+              <div class="grids__item">div in flex box</div>
             </div>
           </div>
         </section>
@@ -200,6 +211,28 @@
 
         <section class="content__forms" id="forms">
           <h2 class="content__title">Forms</h2>
+          <h4>Textfield</h4>
+          <div class="content__wrapper">
+            <input class="textfield" id="textfield-1" placeholder="textfield" />
+            <span class="textfield__helper">This is helper text<span>
+            <input class="textfield textfield--error" id="textfield-2" placeholder="textfield textfield--error"/>
+            <span class="textfield__error">This is helper error message<span>
+            <input class="textfield textfield--radius" id="textfield-3" placeholder="textfield textfield--radius"/>
+            <input class="textfield textfield--radius textfield--error" id="textfield-4" placeholder="textfield textfield--radius textfield--error"/>
+            <input class="textfield textfield--large" id="textfield-4" placeholder="textfield textfield--large" />
+          </div>
+
+          <h4>Text Area</h4>
+          <div class="content__wrapper">
+            <textarea class="textfield" id="textfield-1" rows="3" placeholder="textfield" ></textarea>
+            <span class="textfield__helper">This is helper text<span>
+            <textarea class="textfield textfield--error" rows="3" id="textfield-2" placeholder="textfield textfield--error"></textarea>
+            <span class="textfield__error">This is helper error message<span>
+            <textarea class="textfield textfield--radius" rows="3" id="textfield-3" placeholder="textfield textfield--radius"></textarea>
+            <textarea class="textfield textfield--radius textfield--error" rows="3" id="textfield-4" placeholder="textfield textfield--radius textfield--error"></textarea>
+            <textarea class="textfield textfield--large" rows="3" id="textfield-4" placeholder="textfield textfield--large" ></textarea>
+          </div>
+
           <h4>Checkboxes</h4>
           <div class="content__wrapper">
             <input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/>
@@ -223,6 +256,7 @@
             <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
             <label for="radio-4">No</label>       
           </div>
+
         </section>
 
       </article>

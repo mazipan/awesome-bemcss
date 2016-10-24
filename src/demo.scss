@@ -123,6 +123,13 @@
 -- GRIDS BLOCK --
 */
 .grids{
+    &__flex{
+        @extend %flex;
+    }
+    &__item{
+        border: 1px solid $grey;
+        width: 100%;
+    }
 	&__row{
 		@extend %row;    
 		border: 1px solid $grey;
@@ -203,6 +210,38 @@
 	&--blue{
 		@extend %radio--blue;
 	}
+}
+
+/*
+-- TEXTFIELD --
+*/
+.textfield{
+    @extend %textfield;
+
+    &__helper
+    {
+        @extend %textfield__helper;
+    }
+
+    &__error
+    {
+        @extend %textfield__error;
+    }
+
+    &--radius
+    {
+        @extend %textfield--radius;
+    }
+
+    &--error
+    {
+        @extend %textfield--error;
+    }
+
+    &--large
+    {
+        @extend %textfield--large;
+    }
 }
 
 /*
