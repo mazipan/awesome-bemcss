@@ -29,13 +29,13 @@
 <body class="site">
 
   <header role="header" class="site__header header" id="header">
-  		<div class="header__wrapper">
-  			<div class="header__brand">
-  				<img src="./images/brand.png" />
+      <div class="header__wrapper">
+        <div class="header__brand">
+          <img src="./images/brand.png" />
           <div class="header__title">
             AwesomeBemCSS
           </div>
-  			</div>
+        </div>
       </div>
   </header>
 
@@ -45,7 +45,7 @@
           <small>(demo and cheatsheet)</small>
         </h1>
       </div>
-  		<nav role="nav" class="main__nav nav" id="nav">
+      <nav role="nav" class="main__nav nav" id="nav">
         <ul class="nav__tabs tabs">
             <li class="tabs__item tabs__item--active" data-target="#overview">
               <a href="#overview">Overview</a>
@@ -67,12 +67,25 @@
 
       <article class="main__content content" id="content">
         <section class="content__overview" id="overview">
-          <h2>Overview</h2>
+          <h2 class="content__title">Overview</h2>
+          <h4>Blocks, Elements and Modifiers</h4>
           <p>
-            Actually, BEM is just methodology or convention in css naming.<br>
-            You free to express your way to write BEM CSS.<br>
-            The Goals is to make HTML more readable and more semantic.<br>
-            I built AwesomeBEMCSS to show you how to handling BEM.<br>
+            <strong>Blocks : </strong>Standalone entity that is meaningful on its own.
+            <br>
+            Examples : <code>header</code>, <code>container</code>, <code>menu</code>, <code>checkbox</code>, <code>input</code>
+          </p>
+          <p>
+            <strong>Element : </strong>Parts of a block and have no standalone meaning. They are semantically tied to its block.
+            <br>
+            Examples : <code>menu item</code>, <code>list item</code>, <code>checkbox caption</code>, <code>header title</code>
+          </p>
+          <p>
+            <strong>Modifier : </strong>Flags on blocks or elements. Use them to change appearance or behavior.
+            <br>
+            Examples : <code>disabled</code>, <code>highlighted</code>, <code>checked</code>, <code>fixed</code>, <code>size big</code>, <code>color yellow</code>
+          </p>
+          <p>
+            Further Reading : <a href="http://getbem.com/introduction/">http://getbem.com/introduction/</a> 
           </p>
         </section>
 
@@ -216,55 +229,55 @@
   </main>
 
   <footer role="footer" class="site__footer footer" id="footer">
-  	<div class="footer__wrapper">
+    <div class="footer__wrapper">
 
-  		<div class="footer__text">
-  			<span>Crafted with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by Irfan Maulana</span>
-  		</div>
+      <div class="footer__text">
+        <span>Crafted with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by Irfan Maulana</span>
+      </div>
 
-  		<ul class="footer__list">
-  			<li class="footer__icon">
-  				<a rel="nofollow" href="https://www.facebook.com/mazipanneh">
-  					<i class="fa fa-facebook-official"></i>
-  				</a>
-  			</li>
-  			<li class="footer__icon">
-  				<a rel="nofollow" href="https://twitter.com/Maz_Ipan">
-  					<i class="fa fa-twitter"></i>
-  				</a>
-  			</li>
-  			<li class="footer__icon">
-  				<a rel="nofollow" href="https://instagram.com/maz_ipan">
-  					<i class="fa fa-instagram"></i>
-  				</a>
-  			</li>
-  			<li class="footer__icon">
-  				<a rel="nofollow" href="https://id.linkedin.com/in/irfanmaulanamazipan">
-  					<i class="fa fa-linkedin"></i>
-  				</a>
-  			</li>
-  			<li class="footer__icon">
-  				<a rel="nofollow" href="https://www.slideshare.net/IrfanMaulana21">
-  					<i class="fa fa-slideshare"></i>
-  				</a>
-  			</li>
-  			<li class="footer__icon">
-  				<a rel="nofollow" href="https://github.com/mazipan">
-  					<i class="fa fa-github"></i>
-  				</a>
-  			</li>
-  			<li class="footer__icon">
-  				<a rel="nofollow" href="https://mazipanneh.wordpress.com/">
-  					<i class="fa fa-wordpress"></i>
-  				</a>
-  			</li>
-  		</ul>
+      <ul class="footer__list">
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://www.facebook.com/mazipanneh">
+            <i class="fa fa-facebook-official"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://twitter.com/Maz_Ipan">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://instagram.com/maz_ipan">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://id.linkedin.com/in/irfanmaulanamazipan">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://www.slideshare.net/IrfanMaulana21">
+            <i class="fa fa-slideshare"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://github.com/mazipan">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://mazipanneh.wordpress.com/">
+            <i class="fa fa-wordpress"></i>
+          </a>
+        </li>
+      </ul>
 
       <div class="footer__text">
         <span>Copyright © 2016</span>
       </div>
 
-  	</div>
+    </div>
   </footer>
 
   <script src="./libs/jquery.min.js"></script>
