@@ -1,0 +1,38 @@
+.textfield
+{
+    padding: 6px 12px;
+    margin: 3px 0;
+    width: 100%;
+    outline: none;
+    border: 1px solid $greyLight;
+    border-radius: 0;
+    -webkit-appearance: none;
+    @include placeholder-color($white);
+
+    &__helper {
+        color: $greyDark;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+
+    &__error {
+        color: $red;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    
+    &--radius
+    {
+        @include border-radius(2px);
+    }
+    
+    &--error
+    {
+        border: 1px solid $red;
+    }
+    
+    &--large 
+    {
+        padding: 20px;
+    }
+}
