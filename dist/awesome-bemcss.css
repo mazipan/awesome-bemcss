@@ -393,6 +393,11 @@ a {
   a:hover, a:focus {
     text-decoration: underline; }
 
+code, kbd, pre, samp {
+  background-color: #eaeaea;
+  padding: .1em .5em;
+  border-radius: .1em; }
+
 blockquote {
   padding: 10px;
   margin: 0 0 20px;
