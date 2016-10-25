@@ -6,7 +6,6 @@
     outline: none;
     border: 1px solid $greyLight;
     border-radius: 0;
-    -webkit-appearance: none;
     @include placeholder-color($white);
 
     &__helper {
@@ -23,7 +22,7 @@
     
     &--radius
     {
-        @include border-radius(2px);
+        @include border-radius(0.25em);
     }
     
     &--error

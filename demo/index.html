@@ -24,6 +24,7 @@
         
         <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"> 
         <link rel="stylesheet" type="text/css" href="../dist/demo.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 <body class="site">
@@ -252,13 +253,37 @@
 
           <h4>Text Area</h4>
           <div class="content__wrapper">
-            <textarea class="textfield" id="textfield-1" rows="3" placeholder="textfield" ></textarea>
+            <textarea class="textfield" id="textarea-1" rows="3" placeholder="textfield" ></textarea>
             <span class="textfield__helper">This is helper text<span>
-            <textarea class="textfield textfield--error" rows="3" id="textfield-2" placeholder="textfield textfield--error"></textarea>
+            <textarea class="textfield textfield--error" rows="3" id="textarea-2" placeholder="textfield textfield--error"></textarea>
             <span class="textfield__error">This is helper error message<span>
-            <textarea class="textfield textfield--radius" rows="3" id="textfield-3" placeholder="textfield textfield--radius"></textarea>
+            <textarea class="textfield textfield--radius" rows="3" id="textarea-3" placeholder="textfield textfield--radius"></textarea>
             <textarea class="textfield textfield--radius textfield--error" rows="3" id="textfield-4" placeholder="textfield textfield--radius textfield--error"></textarea>
-            <textarea class="textfield textfield--large" rows="3" id="textfield-4" placeholder="textfield textfield--large" ></textarea>
+            <textarea class="textfield textfield--large" rows="3" id="textarea-4" placeholder="textfield textfield--large" ></textarea>
+          </div>
+
+          <h4>Input Select Box</h4>
+          <div class="content__wrapper">
+            <select class="textfield" id="select_box-1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <select class="textfield textfield--radius" id="select_box-2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <select multiple class="textfield" id="select_box-3">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <select multiple class="textfield textfield--radius" id="select_box-4">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
           </div>
 
           <h4>Checkboxes</h4>

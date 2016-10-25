@@ -4,11 +4,10 @@ $fontSizeBase   : 1.3rem !default;
 html {
     @include box-sizing(border-box);
 
-    // Set default font size 1em = 10px;
     font-size: 62.5%;
     color: $black;
-	-ms-overflow-style: scrollbar;
-	-webkit-tap-highlight-color: transparent;
+  	-ms-overflow-style: scrollbar;
+  	-webkit-tap-highlight-color: transparent;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -33,4 +32,8 @@ blockquote{
   margin: 0 0 20px;
   font-size: 1.6rem;
   border-left: 5px solid #eee;
+}
+
+textarea {
+   resize: none;
 }

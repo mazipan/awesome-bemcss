@@ -399,6 +399,9 @@ blockquote {
   font-size: 1.6rem;
   border-left: 5px solid #eee; }
 
+textarea {
+  resize: none; }
+
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -732,8 +735,7 @@ blockquote {
   width: 100%;
   outline: none;
   border: 1px solid #d0d0d0;
-  border-radius: 0;
-  -webkit-appearance: none; }
+  border-radius: 0; }
   .textfield ::-moz-placeholder {
     opacity: 1;
     color: #ffffff; }
@@ -750,9 +752,9 @@ blockquote {
     font-size: 1.2rem;
     line-height: 2; }
   .textfield--radius {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px; }
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em; }
   .textfield--error {
     border: 1px solid #ed1c24; }
   .textfield--large {
