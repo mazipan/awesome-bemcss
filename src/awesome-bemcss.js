@@ -46,10 +46,36 @@ var initTabsEvent = (function(){
     }
 })();
 
+var initTableSort = (function(){
+    var item = $('.table__sort--asc, .table__sort--desc');
+    item.on('click', function(){
+        var sortable = $(this).attr('sortable');
+        if(sortable && sortable === 'true'){
+            $(this).toggleClass('table__sort--asc table__sort--desc'); 
+        }               
+        return false;
+    });
+})();
+
+var initPagination = (function(){
+    var item = $('.pager__page');
+    item.on('click', function(){
+        var allPager = $(this).parent().siblings().find('.pager__page');
+        $(allPager).removeClass('pager__page--active');
+        
+        $(this).addClass('pager__page--active');
+
+        return false;
+    });
+})();
+
 $(document).ready(function () {
 	'use strict';   
 
 	initTabsEvent;
+    initTableSort;
+    initPagination;
+
 });
 
 $(window).load(function(){

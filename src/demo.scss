@@ -64,8 +64,7 @@
 
         img
         {
-            width: 50px;
-            @include border-radius(3px);
+            height: 45px;
         }
     }
     &__title{
@@ -270,6 +269,67 @@
     }
 }
 
+
+/*
+-- SELECT --
+*/
+.select{
+    @extend %select;
+
+    &--radius
+    {
+        @extend %select--radius;
+    }
+}
+
+
+/*
+-- TABLE --
+*/
+.table{
+    @extend %table;
+
+    &__head{
+        @extend %table__head;
+    }
+
+    &__body{
+        @extend %table__body;
+    }
+
+    &__sort{
+        &--asc
+        {
+            @extend %table__sort--asc;
+        }
+        &--desc
+        {
+            @extend %table__sort--desc;
+        }
+    }
+}
+
+
+/*
+-- PAGER --
+*/
+.pager{
+    @extend %pager;
+
+    &__page{
+        @extend %pager__page;
+
+        &--active{
+            @extend %pager__page--active;
+        }
+    }
+
+    &--radius{
+        @extend %pager--radius;
+    }
+}
+
+
 /*
 -- FOOTER BLOCK --
 */
@@ -277,7 +337,7 @@
 {
     margin: 0 auto;
     padding: 20px 0;
-    background: $blackLight;
+    background: $blue;
     color: #fff;
 
     &__wrapper
