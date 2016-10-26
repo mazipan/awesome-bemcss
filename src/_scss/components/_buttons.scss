@@ -28,7 +28,7 @@ $buttonVariansFont: $white, $white, $white, $white, $black;
             }
         }
     }
-    
+
     @for $j from 1 through length($buttonVariansName) {  
         &-outline--#{nth($buttonVariansName, $j)} {
             border: 1px solid nth($buttonVariansHex, $j); 
@@ -42,13 +42,16 @@ $buttonVariansFont: $white, $white, $white, $white, $black;
         }
     }
 
+
     &--dropdown{
+        padding: 10px 12px 10px 0;
+
         &:after{
             content: '\25BE';
             font-size: 2rem;
             position: relative;
             float: right;
-            padding-left: .5em;
+            padding-left: 1em;
             margin-top: -6px;  
             height: 0;     
         }
@@ -62,7 +65,6 @@ $buttonVariansFont: $white, $white, $white, $white, $black;
         border: 1px solid $greyLight;
         background-color: $white;
         margin-top: .8em;
-        margin-left: -1.5em;
         text-align: left;
         @extend %reset-list;
 

@@ -525,14 +525,16 @@ textarea {
     color: #B6B6B6; }
     .button-outline--gray:hover {
       text-decoration: none; }
-  .button--dropdown:after {
-    content: '\25BE';
-    font-size: 2rem;
-    position: relative;
-    float: right;
-    padding-left: .5em;
-    margin-top: -6px;
-    height: 0; }
+  .button--dropdown {
+    padding: 10px 12px 10px 0; }
+    .button--dropdown:after {
+      content: '\25BE';
+      font-size: 2rem;
+      position: relative;
+      float: right;
+      padding-left: 1em;
+      margin-top: -6px;
+      height: 0; }
   .button__menu {
     display: none;
     position: absolute;
@@ -541,7 +543,6 @@ textarea {
     border: 1px solid #d0d0d0;
     background-color: #ffffff;
     margin-top: .8em;
-    margin-left: -1.5em;
     text-align: left; }
     .button__menu li a {
       text-decoration: none;
