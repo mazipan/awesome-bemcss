@@ -206,6 +206,14 @@
 .button{
 	@extend %button;
 
+    &--dropdown{
+        @extend %button--dropdown;
+    }
+
+    &__menu{
+        @extend %button__menu;
+    }
+
 	@for $i from 1 through length($buttonVariansName) { 
 		&--#{nth($buttonVariansName, $i)} {
 			@extend %button--#{nth($buttonVariansName, $i)};

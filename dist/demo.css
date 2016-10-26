@@ -1,4 +1,4 @@
-.nav__tabs, .tabs, .pager {
+.button__menu, .nav__tabs, .tabs, .pager {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -525,6 +525,36 @@ textarea {
     color: #B6B6B6; }
     .button-outline--gray:hover {
       text-decoration: none; }
+  .button--dropdown:after {
+    content: '\25BE';
+    font-size: 2rem;
+    position: relative;
+    float: right;
+    padding-left: .5em;
+    margin-top: -6px;
+    height: 0; }
+  .button__menu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-width: 160px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    margin-top: .8em;
+    margin-left: -1.5em;
+    text-align: left; }
+    .button__menu li a {
+      text-decoration: none;
+      display: block;
+      padding: 7px 20px;
+      clear: both;
+      white-space: nowrap;
+      color: #333333;
+      border-bottom: 1px solid #d0d0d0; }
+      .button__menu li a:hover {
+        background-color: #d0d0d0; }
+    .button__menu li:last-child a {
+      border: 0; }
 
 .checkbox {
   position: absolute;
@@ -708,13 +738,15 @@ textarea {
     font-size: 2rem;
     position: relative;
     float: right;
-    margin-top: -7px; }
+    margin-top: -7px;
+    height: 0; }
   .table__sort--desc:after {
     content: '\25B4';
     font-size: 2rem;
     position: relative;
     float: right;
-    margin-top: -7px; }
+    margin-top: -7px;
+    height: 0; }
 
 .pager {
   font-size: 1.4rem; }

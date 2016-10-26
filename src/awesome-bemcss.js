@@ -1,6 +1,32 @@
 /*! AwesomeBemCSS by Irfan Maulana*/
 
 /*
+DROPDOWN
+*/
+var initDropdown = (function(){
+    var item = $('.button--dropdown');
+    item.on('click', function(){
+        var target = $(this).find('.button__menu');
+        $(target).stop(true, true).delay(50).slideToggle(200);
+    });
+
+    item.hover(function(){
+        $(this).stop(true, true);
+    }, function(){
+        var target = $(this).find('.button__menu');
+        $(target).stop(true, true).delay(1000).slideUp(200);
+    });
+
+    var menu = $('.button__menu');
+    menu.hover(function(){
+        $(this).stop(true, true);
+    }, function(){
+        $(this).stop(true, true).delay(1000).slideUp(200);
+    });
+
+})();
+
+/*
 TABS
 */
 function setActiveTab(target){
@@ -46,6 +72,9 @@ var initTabsEvent = (function(){
     }
 })();
 
+/*
+SORT TABLE
+*/
 var initTableSort = (function(){
     var item = $('.table__sort--asc, .table__sort--desc');
     item.on('click', function(){
@@ -57,6 +86,9 @@ var initTableSort = (function(){
     });
 })();
 
+/*
+PAGINATION
+*/
 var initPagination = (function(){
     var item = $('.pager__page');
     item.on('click', function(){
@@ -72,6 +104,7 @@ var initPagination = (function(){
 $(document).ready(function () {
 	'use strict';   
 
+    initDropdown;
 	initTabsEvent;
     initTableSort;
     initPagination;
