@@ -1,9 +1,10 @@
 # awesome-bemcss
 Simple CSS Framework with BEM CSS convention implementation
 
-<h3>Preview</h3>
+<h3>Demo And Cheatsheet</h3>
+<a href="https://mazipan.github.io/demo/awesome-bemcss/">https://mazipan.github.io/demo/awesome-bemcss/</a>
 
-<h3>Using technology</h3>
+<h3>Using Technology</h3>
 - SCSS from SASS 
 - HTML
 - NodeJS, Grunt, etc.
