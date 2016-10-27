@@ -27,6 +27,11 @@
     &__nav
     {
     	@extend %col-2;
+
+        @media screen and (max-width:640px)
+        {
+            display: none;
+        }
     }
     &__content
     {
@@ -86,6 +91,11 @@
             {
                 color: $blackDark;
             }
+        }
+
+        @media screen and (max-width:640px)
+        {
+            display: none;
         }
     }
 }
@@ -205,6 +215,8 @@
 */
 .button{
 	@extend %button;
+    // just for demo usage
+    margin: .1em;
 
     &--dropdown{
         @extend %button--dropdown;
@@ -290,6 +302,22 @@
     }
 }
 
+/*
+-- ALERT --
+*/
+.alert{
+    @extend %alert;
+
+    &--radius{
+        @extend %alert--radius;
+    }
+
+    @for $i from 1 through length($buttonVariansName) {
+        &--#{nth($buttonVariansName, $i)}{
+            @extend %alert--#{nth($buttonVariansName, $i)};
+        }          
+    }
+}
 
 /*
 -- TABLE --

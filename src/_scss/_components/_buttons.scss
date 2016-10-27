@@ -1,8 +1,3 @@
-$buttonVariansName: green, red, blue, orange, gray;
-$buttonVariansHex: $green, $red, $blue, $orange, $grey;
-$buttonVariansHover: $greenLight, $redLight, $blueLight, $orangeLight, $greyLight;
-$buttonVariansFont: $white, $white, $white, $white, $black;
-
 %button
 {
     
@@ -14,6 +9,10 @@ $buttonVariansFont: $white, $white, $white, $white, $black;
     text-decoration: none;
     cursor: pointer;
     -webkit-appearance: none;
+
+    &--radius{
+        @include border-radius(.25em);         
+    }
 
     @for $i from 1 through length($buttonVariansName) {  
         &--#{nth($buttonVariansName, $i)} {

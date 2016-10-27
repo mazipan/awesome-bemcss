@@ -73,6 +73,17 @@ var initTabsEvent = (function(){
 })();
 
 /*
+ALERT
+*/
+var initAlertClose = (function(){
+    var item = $('.alert__close');
+    item.on('click', function(){
+        $(this).parent().hide();
+        return false;
+    });
+})();
+
+/*
 SORT TABLE
 */
 var initTableSort = (function(){
@@ -106,6 +117,7 @@ $(document).ready(function () {
 
     initDropdown;
 	initTabsEvent;
+    initAlertClose;
     initTableSort;
     initPagination;
 

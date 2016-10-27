@@ -779,6 +779,60 @@ textarea {
     border-top-right-radius: 0.25em;
     border-bottom-right-radius: 0.25em; }
 
+.alert--green .alert__close, .alert--red .alert__close, .alert--blue .alert__close, .alert--orange .alert__close, .alert--gray .alert__close {
+  position: relative;
+  top: -4px;
+  right: -21px;
+  padding: 0 20px;
+  float: right;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-decoration: none; }
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: none; }
+  .alert--radius {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em; }
+  .alert--green {
+    border: 1px dashed #00b25a;
+    color: #00b25a; }
+    .alert--green .alert__close {
+      color: #00b25a; }
+      .alert--green .alert__close:hover {
+        text-decoration: none; }
+  .alert--red {
+    border: 1px dashed #ed1c24;
+    color: #ed1c24; }
+    .alert--red .alert__close {
+      color: #ed1c24; }
+      .alert--red .alert__close:hover {
+        text-decoration: none; }
+  .alert--blue {
+    border: 1px dashed #068AC9;
+    color: #068AC9; }
+    .alert--blue .alert__close {
+      color: #068AC9; }
+      .alert--blue .alert__close:hover {
+        text-decoration: none; }
+  .alert--orange {
+    border: 1px dashed #FF5400;
+    color: #FF5400; }
+    .alert--orange .alert__close {
+      color: #FF5400; }
+      .alert--orange .alert__close:hover {
+        text-decoration: none; }
+  .alert--gray {
+    border: 1px dashed #B6B6B6;
+    color: #B6B6B6; }
+    .alert--gray .alert__close {
+      color: #B6B6B6; }
+      .alert--gray .alert__close:hover {
+        text-decoration: none; }
+
 /*
 -- SITE BLOCK --
 * every block should in seperate file 
@@ -792,6 +846,10 @@ textarea {
 /*
 -- MAIN BLOCK --
 */
+@media screen and (max-width: 640px) {
+  .main__nav {
+    display: none; } }
+
 .main__content {
   padding: 20px; }
 
@@ -832,6 +890,9 @@ textarea {
       font-size: 1.2rem; }
       .header__nav a:hover {
         color: #1a1a1a; }
+    @media screen and (max-width: 640px) {
+      .header__nav {
+        display: none; } }
 
 /*
 -- NAVIGATION BLOCK --
@@ -896,30 +957,28 @@ textarea {
 /*
 -- BUTTON BLOCK --
 */
-.button-radius--green {
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em; }
-
-.button-radius--red {
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em; }
-
-.button-radius--blue {
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em; }
-
-.button-radius--orange {
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em; }
-
-.button-radius--gray {
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em; }
+.button {
+  margin: .1em; }
+  .button-radius--green {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em; }
+  .button-radius--red {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em; }
+  .button-radius--blue {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em; }
+  .button-radius--orange {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em; }
+  .button-radius--gray {
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em; }
 
 /*
 -- CHECKBOXES
@@ -932,6 +991,9 @@ textarea {
 */
 /*
 -- SELECT --
+*/
+/*
+-- ALERT --
 */
 /*
 -- TABLE --

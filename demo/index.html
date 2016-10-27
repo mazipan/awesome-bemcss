@@ -135,7 +135,18 @@
             <div class="content__col-lg">
                 <h4>Paragraph</h4>
                 <p>
-                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit autocomplete Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
+                Lorem ipsum dolor sit amet 
                 </p>
 
                 <h4>Blockquote</h4>
@@ -157,26 +168,10 @@
           <div class="content__wrapper grids">
             <div class="grids__row">row (total col in row = 16)</div>
             <div class="grids__row">
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-1">col-1</div>
+              <div class="grids__col-16">col-16</div>
             </div>           
             <div class="grids__row">
-              <div class="grids__col-1">col-1</div>
-              <div class="grids__col-2">col-2</div>
+              <div class="grids__col-3">col-3</div>
               <div class="grids__col-3">col-3</div>
               <div class="grids__col-10">col-10</div>
             </div>
@@ -311,12 +306,7 @@
           <h4>Text Area</h4>
           <div class="content__wrapper">
             <textarea class="textfield" id="textarea-1" rows="3" placeholder="textfield" ></textarea>
-            <span class="textfield__helper">This is helper text<span>
-            <textarea class="textfield textfield--error" rows="3" id="textarea-2" placeholder="textfield textfield--error"></textarea>
-            <span class="textfield__error">This is helper error message<span>
             <textarea class="textfield textfield--radius" rows="3" id="textarea-3" placeholder="textfield textfield--radius"></textarea>
-            <textarea class="textfield textfield--radius textfield--error" rows="3" id="textfield-4" placeholder="textfield textfield--radius textfield--error"></textarea>
-            <textarea class="textfield textfield--large" rows="3" id="textarea-4" placeholder="textfield textfield--large" ></textarea>
           </div>
 
           <h4>Input Select Box</h4>
@@ -343,6 +333,57 @@
             </select>
           </div>
 
+          <h4>Tabs</h4>
+          <div class="content__wrapper">
+            <div class="content__col-sm">
+              <h5>Tabs Vertical</h5>            
+              <ul class="tabs tabs--vertical">
+                <li class="tabs__itemv tabs__itemv--active" data-target="#overview">
+                  <a href="#overview">Overview</a>
+                </li>
+                <li class="tabs__itemv" data-target="#typography">
+                  <a href="#typography">Typography</a>
+                </li>
+                <li class="tabs__itemv" data-target="#grids">
+                  <a href="#grids">Grids</a>
+                </li>
+                <li class="tabs__itemv" data-target="#buttons">
+                  <a href="#buttons">Buttons</a>
+                </li>
+                <li class="tabs__itemv" data-target="#forms">
+                  <a href="#forms">Forms</a>
+                </li>
+                <li class="tabs__itemv" data-target="#table">
+                  <a href="#table">Table</a>
+                </li>
+              </ul>
+            </div>  
+
+            <div class="content__col-lg">
+              <h5>Tabs Horizontal</h5>        
+              <ul class="tabs">
+                <li class="tabs__item tabs__item--active" data-target="#overview">
+                  <a href="#overview">Overview</a>
+                </li>
+                <li class="tabs__item" data-target="#typography">
+                  <a href="#typography">Typography</a>
+                </li>
+                <li class="tabs__item" data-target="#grids">
+                  <a href="#grids">Grids</a>
+                </li>
+                <li class="tabs__item" data-target="#buttons">
+                  <a href="#buttons">Buttons</a>
+                </li>
+                <li class="tabs__item" data-target="#forms">
+                  <a href="#forms">Forms</a>
+                </li>
+                <li class="tabs__item" data-target="#table">
+                  <a href="#table">Table</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <h4>Checkboxes</h4>
           <div class="content__wrapper">
             <input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/>
@@ -365,6 +406,30 @@
             <label for="radio-3">Yes</label>
             <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
             <label for="radio-4">No</label>       
+          </div>
+
+          <h4>Alert</h4>
+          <div class="content__wrapper">
+            <div class="alert alert--radius alert--green">
+              <a href="javascript:void(0)" class="alert__close">x</a>
+              <strong>Info!</strong> Better check yourself, you're not looking too good.
+            </div>                
+            <div class="alert alert--radius alert--red">
+              <a href="javascript:void(0)" class="alert__close">x</a>
+              <strong>Info!</strong> Better check yourself, you're not looking too good.
+            </div> 
+            <div class="alert alert--radius alert--blue">
+              <a href="javascript:void(0)" class="alert__close">x</a>
+              <strong>Info!</strong> Better check yourself, you're not looking too good.
+            </div>    
+            <div class="alert alert--radius alert--orange">
+              <a href="javascript:void(0)" class="alert__close">x</a>
+              <strong>Info!</strong> Better check yourself, you're not looking too good.
+            </div>    
+            <div class="alert alert--radius alert--gray">
+              <a href="javascript:void(0)" class="alert__close">x</a>
+              <strong>Info!</strong> Better check yourself, you're not looking too good.
+            </div>         
           </div>
 
         </section>
