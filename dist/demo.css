@@ -425,22 +425,37 @@ textarea {
 .grids__col-1 {
   float: left;
   width: 6.25%; }
+  @media only screen and (max-width: 63.75em) {
+    .grids__col-1 {
+      width: 100%; } }
 
 .main__nav, .grids__col-2 {
   float: left;
   width: 12.5%; }
+  @media only screen and (max-width: 63.75em) {
+    .main__nav, .grids__col-2 {
+      width: 100%; } }
 
 .content__col-sm, .grids__col-3 {
   float: left;
   width: 18.75%; }
+  @media only screen and (max-width: 63.75em) {
+    .content__col-sm, .grids__col-3 {
+      width: 100%; } }
 
 .content__col-lg, .grids__col-10 {
   float: left;
   width: 62.5%; }
+  @media only screen and (max-width: 63.75em) {
+    .content__col-lg, .grids__col-10 {
+      width: 100%; } }
 
 .main__content {
   float: left;
   width: 87.5%; }
+  @media only screen and (max-width: 63.75em) {
+    .main__content {
+      width: 100%; } }
 
 .grids__col-offset-1 {
   margin-left: 6.25%; }

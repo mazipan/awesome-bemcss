@@ -1,28 +1,34 @@
 .clearfix{
-	@include clearfix(); 
+	@include clearfix();
 }
 
-.row { 
-	@include clearfix(); 
+.row {
+	@include clearfix();
 	margin: 0 auto;
     max-width: 92.308em;
 }
 
-.flex{	
+.flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 $columnCount : 16 !default;
+$break-medium: 63.750em;
+
 @for $i from 1 through $columnCount {
 	.col-#{$i}{
-		float: left; 
+		float: left;
 		width: ((100/$columnCount) * $i) *1%;
+
+		@media only screen and (max-width:$break-medium) {
+			width: 100%;
+		}
 	}
 }
 @for $i from 1 through $columnCount {
-	.col-offset-#{$i}{ 
-		margin-left: ((100/$columnCount) * $i) *1%; 
+	.col-offset-#{$i}{
+		margin-left: ((100/$columnCount) * $i) *1%;
 	}
 }

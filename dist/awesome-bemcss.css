@@ -433,66 +433,114 @@ textarea {
 .col-1 {
   float: left;
   width: 6.25%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-1 {
+      width: 100%; } }
 
 .col-2 {
   float: left;
   width: 12.5%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-2 {
+      width: 100%; } }
 
 .col-3 {
   float: left;
   width: 18.75%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-3 {
+      width: 100%; } }
 
 .col-4 {
   float: left;
   width: 25%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-4 {
+      width: 100%; } }
 
 .col-5 {
   float: left;
   width: 31.25%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-5 {
+      width: 100%; } }
 
 .col-6 {
   float: left;
   width: 37.5%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-6 {
+      width: 100%; } }
 
 .col-7 {
   float: left;
   width: 43.75%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-7 {
+      width: 100%; } }
 
 .col-8 {
   float: left;
   width: 50%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-8 {
+      width: 100%; } }
 
 .col-9 {
   float: left;
   width: 56.25%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-9 {
+      width: 100%; } }
 
 .col-10 {
   float: left;
   width: 62.5%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-10 {
+      width: 100%; } }
 
 .col-11 {
   float: left;
   width: 68.75%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-11 {
+      width: 100%; } }
 
 .col-12 {
   float: left;
   width: 75%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-12 {
+      width: 100%; } }
 
 .col-13 {
   float: left;
   width: 81.25%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-13 {
+      width: 100%; } }
 
 .col-14 {
   float: left;
   width: 87.5%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-14 {
+      width: 100%; } }
 
 .col-15 {
   float: left;
   width: 93.75%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-15 {
+      width: 100%; } }
 
 .col-16 {
   float: left;
   width: 100%; }
+  @media only screen and (max-width: 63.75em) {
+    .col-16 {
+      width: 100%; } }
 
 .col-offset-1 {
   margin-left: 6.25%; }
