@@ -754,13 +754,13 @@ textarea {
   left: -9999px; }
   .radio + label {
     position: relative;
-    padding-top: 1em;
-    padding-left: 35px;
+    padding-top: 14px;
+    padding-left: 30px;
     cursor: pointer; }
     .radio + label:before, .radio + label:after {
       position: absolute;
       top: 0;
-      left: 4px;
+      left: 0;
       color: #333333;
       font-size: 2.8rem;
       transition: all .2s; }

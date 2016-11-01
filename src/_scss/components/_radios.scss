@@ -6,8 +6,8 @@
     & + label
     {
         position: relative;
-        padding-top: 1em;;
-        padding-left: 35px;
+        padding-top: 14px;
+        padding-left: 30px;
         cursor: pointer;
 
         &:before,
@@ -15,7 +15,7 @@
         {
             position: absolute;
             top: 0;
-            left: 4px;
+            left: 0;
             color: $black;
             font-size: 2.8rem;
             transition: all .2s;
