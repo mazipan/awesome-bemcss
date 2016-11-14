@@ -20,6 +20,7 @@
   "font-faces": false,
   "floats": false,
   "star-property-hack": false,
+  "order-alphabetical": false,
   "outline-none": false,
   "import": false,
   "ids": false,

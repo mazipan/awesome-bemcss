@@ -1,17 +1,15 @@
+@import "../_components/grids";
+
 .clearfix{
-	@include clearfix();
+	@extend %clearfix;
 }
 
 .row {
-	@include clearfix();
-	margin: 0 auto;
-    max-width: 92.308em;
+	@extend %row;
 }
 
 .flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	@extend %flex;
 }
 
 $columnCount : 16 !default;
@@ -19,16 +17,11 @@ $break-medium: 63.750em;
 
 @for $i from 1 through $columnCount {
 	.col-#{$i}{
-		float: left;
-		width: ((100/$columnCount) * $i) *1%;
-
-		@media only screen and (max-width:$break-medium) {
-			width: 100%;
-		}
+		@extend %col-#{$i};
 	}
 }
 @for $i from 1 through $columnCount {
 	.col-offset-#{$i}{
-		margin-left: ((100/$columnCount) * $i) *1%;
+		@extend %col-offset-#{$i};
 	}
 }

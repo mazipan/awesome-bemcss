@@ -8,10 +8,10 @@ $yellow		: #ff9700 !default;
 $orange		: #FF5400 !default;
 $brown 		: #6A453C !default;
 
-$blackDark 	: darken($black,10%) !default;
-$blackDarker    : darken($black,20%) !default;
-$blackLight     : lighten($black,10%) !default;
-$blackLighter   : lighten($black,20%) !default;
+$blackDark 	 : darken($black,10%) !default;
+$blackDarker : darken($black,20%) !default;
+$blackLight  : lighten($black,10%) !default;
+$blackLighter: lighten($black,20%) !default;
 
 $blueDark	: darken($blue,10%) !default;
 $blueDarker	: darken($blue,20%) !default;

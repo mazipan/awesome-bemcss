@@ -1,37 +1,29 @@
+@import "../_components/textfield";
+
 .textfield
 {
-    padding: 6px 12px;
-    margin: 3px 0;
-    width: 100%;
-    outline: none;
-    border: 1px solid $greyLight;
-    border-radius: 0;
-    @include placeholder-color($white);
+    @extend %textfield;
 
     &__helper {
-        color: $greyDark;
-        font-size: 1.2rem;
-        line-height: 2;
+        @extend %textfield__helper;
     }
 
     &__error {
-        color: $red;
-        font-size: 1.2rem;
-        line-height: 2;
+        @extend %textfield__error;
     }
     
     &--radius
     {
-        @include border-radius(0.25em);
+        @extend %textfield--radius;
     }
     
     &--error
     {
-        border: 1px solid $red;
+        @extend %textfield--error;
     }
     
     &--large 
     {
-        padding: 20px;
+        @extend %textfield--large;
     }
 }

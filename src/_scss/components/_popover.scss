@@ -1,3 +1,5 @@
-%popover{
-    
+@import "../_components/popover";
+
+.popover{
+    @extend %popover !optional;
 }

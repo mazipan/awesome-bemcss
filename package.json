@@ -1,19 +1,27 @@
 {
   "name": "awesome-bemcss",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "author-name": "irfan maulana",
   "author-mail": "mazipanneh@gmail.com",
   "scripts": {
     "build": "grunt --verbose"
   },
-  "dependencies": {},
+  "dependencies": {
+    
+  },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-cssmin": "~0.14.0",
+    "autoprefixer": "^6.5.1",
+    "grunt": "^1.0.1",
+    "grunt-banner": "^0.6.0",
+    "grunt-concurrent": "^2.2.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-postcss": "^0.8.0",
     "grunt-sass": "^1.2.1"
   }
 }
