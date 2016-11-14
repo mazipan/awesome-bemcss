@@ -1,61 +1,27 @@
+@import "../_components/tabs";
+
 .tabs
 {
-    @extend %reset-list;
+    @extend %tabs;
 
     &__item
     {
-        display: inline-block;
-        a
-        {
-            position: relative;
-            display: block;
-            padding: 10px 15px;
-            text-decoration: none;
+        @extend %tabs__item;
 
-            &:hover
-            {
-                background-color: $greyLighter;
-            }
-        }
         &--active
         {
-            border-bottom: 2px solid $blue;
-
-            a
-            {
-                color: $blackDarker;
-            }
+            @extend %tabs__item--active;
         }
     }
+
     // v stand for vertical
     &__itemv
     {
-        display: block;
-        margin: .2em 0;
+        @extend %tabs__itemv;
 
-        a
-        {
-            position: relative;
-            display: block;
-            padding: 10px 15px;
-            background-color: $greyLighter;
-            text-decoration: none;
-
-            &:hover
-            {
-                background-color: $greyLight;
-            }
-        }
         &--active
         {
-            border-left: 2px solid $blue;
-            background-color: $greyLight;
-
-            a
-            {
-                background-color: $greyLight;
-                color: $blackDarker;
-            }
+            @extend %tabs__itemv--active;
         }
     }
 }

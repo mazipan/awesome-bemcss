@@ -1,3 +1,5 @@
+@import "textfield";
+
 %select
 {
     @extend %textfield;
@@ -11,3 +13,21 @@
         @include border-radius(0.25em);
     } 
 }
+
+
+/*
+border: 1px solid #00d1b2;
+border-right: 0;
+border-top: 0;
+content: " ";
+display: block;
+height: 7px;
+pointer-events: none;
+position: absolute;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+width: 7px;
+margin-top: -6px;
+right: 16px;
+top: 50%;
+*/
