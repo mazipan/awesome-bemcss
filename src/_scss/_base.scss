@@ -1,9 +1,5 @@
-//SETTINGS
-$fontSizeBase   : 1.3rem !default;
-
 html {
     @include box-sizing(border-box);
-
     font-size: 62.5%;
     color: $black;
   	-ms-overflow-style: scrollbar;
@@ -12,9 +8,8 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
-    font-size: $fontSizeBase;
+    font-size: 1.3rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
