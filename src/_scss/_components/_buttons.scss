@@ -36,6 +36,8 @@
 
             &:hover
             {
+                border: 1px solid nth($buttonVariansHover, $j);
+                color: nth($buttonVariansHover, $j);
                 text-decoration: none;
             }
         }

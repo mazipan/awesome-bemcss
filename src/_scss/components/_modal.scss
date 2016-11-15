@@ -1,0 +1,15 @@
+@import "../_components/modal";
+
+.modal
+{
+    
+    @extend %modal;
+
+    &__content {
+        @extend %modal__content;
+    }
+
+    &__close {
+        @extend %modal__close;
+    }
+}

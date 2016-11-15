@@ -23,6 +23,7 @@
         <meta name="twitter:description" content="Simple CSS Framework Using BEM Methodology"/>
         
         <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"> 
+        <link rel="stylesheet" type="text/css" href="../dist/awesome-bemcss.css"> 
         <link rel="stylesheet" type="text/css" href="../dist/demo.css"> 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -32,12 +33,9 @@
   <header role="header" class="site__header header" id="header">
       <div class="header__wrapper">
         <div class="header__brand">
-          <img src="./images/brand-blue.png" />
-          <!--
-          <div class="header__title">
-            AwesomeBemCSS
-          </div>
-          -->
+          <a href="#">
+            <img src="./images/brand-blue.png" />
+          </a>
         </div>
 
         <nav role="nav" class="header__nav">      
@@ -168,39 +166,39 @@
         <section class="content__grids" id="grids">
           <h2 class="content__title">Grids</h2>          
           <h4>Row And Columns</h4>
-          <div class="content__wrapper grids">
-            <div class="grids__row">row (total col in row = 16)</div>
-            <div class="grids__row">
-              <div class="grids__col-16">col-16</div>
+          <div class="content__wrapper grid">
+            <div class="grid__row">row (total col in row = 16)</div>
+            <div class="grid__row">
+              <div class="grid__col-16">col-16</div>
             </div>           
-            <div class="grids__row">
-              <div class="grids__col-3">col-3</div>
-              <div class="grids__col-3">col-3</div>
-              <div class="grids__col-10">col-10</div>
+            <div class="grid__row">
+              <div class="grid__col-3">col-3</div>
+              <div class="grid__col-3">col-3</div>
+              <div class="grid__col-10">col-10</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-1">col-offset-1</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-1">col-offset-1</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-2">col-offset-2</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-2">col-offset-2</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-3">col-offset-3</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-3">col-offset-3</div>
             </div>
           </div>
 
           <h4>Flex Box</h4>
           <div class="content__wrapper">            
-            <div class="grids__flex">
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
+            <div class="grid__flex">
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
             </div>
-            <div class="grids__flex">
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
+            <div class="grid__flex">
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
             </div>
           </div>
         </section>
@@ -236,11 +234,11 @@
 
           <h4>Button Radius</h4>
           <div class="content__wrapper">
-            <button class="button button-radius--green">button-radius--green</button>
-            <button class="button button-radius--red">button-radius--red</button>
-            <button class="button button-radius--blue">button-radius--blue</button>
-            <button class="button button-radius--orange">button-radius--orange</button>
-            <button class="button button-radius--gray">button-radius--gray</button>
+            <button class="button button--radius button--green">button-radius--green</button>
+            <button class="button button--radius button--red">button-radius--red</button>
+            <button class="button button--radius button--blue">button-radius--blue</button>
+            <button class="button button--radius button--orange">button-radius--orange</button>
+            <button class="button button--radius button--gray">button-radius--gray</button>
           </div>
 
           <h4>Buttons Dropdown</h4>
@@ -435,6 +433,23 @@
             </div>         
           </div>
 
+          <h4>Popover</h4>
+          <div class="content__wrapper">
+            <div class="popover">
+              <span>Hover Me !</span>
+              <div class="popover__content">
+                This is content !
+              </div>
+            </div>            
+          </div>
+
+        </section>
+
+        <section class="content__card" id="card">
+          <h2 class="content__title">Card</h2>
+          <div class="content__wrapper"> 
+              <div class="card"></div>
+          </div>
         </section>
 
         <section class="content__table" id="table">
