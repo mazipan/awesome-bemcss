@@ -5,8 +5,20 @@
     
     @extend %modal;
 
+    &__header {
+        @extend %modal__header;
+    }
+
     &__content {
         @extend %modal__content;
+    }
+
+    &__body {
+        @extend %modal__body;
+    }
+
+    &__footer {
+        @extend %modal__footer;
     }
 
     &__close {

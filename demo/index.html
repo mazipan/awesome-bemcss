@@ -413,32 +413,32 @@
           <div class="content__wrapper">
             <div class="alert alert--radius alert--green">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--green
             </div>                
             <div class="alert alert--radius alert--red">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--red
             </div> 
             <div class="alert alert--radius alert--blue">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--blue
             </div>    
             <div class="alert alert--radius alert--orange">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--orange
             </div>    
             <div class="alert alert--radius alert--gray">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--gray
             </div>         
           </div>
 
           <h4>Popover</h4>
           <div class="content__wrapper">
             <div class="popover">
-              <span>Hover Me !</span>
+              <span>Hover Me, I am popover !</span>
               <div class="popover__content">
-                This is content !
+                Hello, I am popover__content !
               </div>
             </div>            
           </div>
@@ -448,7 +448,45 @@
         <section class="content__card" id="card">
           <h2 class="content__title">Card</h2>
           <div class="content__wrapper"> 
-              <div class="card"></div>
+              <div class="card">card</div>
+              <div class="card">card</div>
+              <div class="card">card</div>
+          </div>
+          <div class="content__wrapper"> 
+              <div class="card card--radius">card card--radius</div>
+              <div class="card card--radius">card card--radius</div>
+              <div class="card card--radius">card card--radius</div>
+          </div>
+        </section>
+
+        <section class="content__card" id="modal">
+          <h2 class="content__title">Modal</h2>
+          <div class="content__wrapper"> 
+
+            <button id="myBtn" 
+                    class="button button--blue" 
+                    data-modal="myModal">
+
+              Open Modal
+              
+            </button>
+
+            <div id="myModal" class="modal" role="modal">
+              <div class="modal__content">
+                <div class="modal__header">
+                  <span class="modal__close">×</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal__body">
+                  <p>Some text in the Modal Body</p>
+                  <p>Some other text...</p>
+                </div>
+                <div class="modal__footer">
+                  <h3>Modal Footer</h3>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 

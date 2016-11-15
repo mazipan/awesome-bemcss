@@ -2,7 +2,7 @@
 {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 999; 
     left: 0;
     top: 0;
     width: 100%;
@@ -11,14 +11,21 @@
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4);   
 
+    &__header{        
+        padding: 2px 16px;
+        background-color: $blue;
+        color: white;
+    }
+
     &__content {
-        background-color: #fefefe;
+        position: relative;
+        background-color: $white;
         margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
+        padding: 0;
         width: 80%;
 
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow : 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); 
+         
         -webkit-animation-name: animatetop;
         -webkit-animation-duration: 0.4s;
         animation-name: animatetop;
@@ -26,16 +33,26 @@
         
     } 
 
+    &__body {
+        padding: 2px 16px;
+    }
+
+    &__footer {
+        padding: 2px 16px;
+        background-color: $blue;
+        color: white;
+    }
+
     &__close {
-        color: #aaa;
         float: right;
         font-size: 28px;
         font-weight: bold;
+        color: $white;
+        cursor: pointer;
+        text-decoration: none;
 
         &:hover, &:focus {
-            color: black;
             text-decoration: none;
-            cursor: pointer;
         }
     }
 }

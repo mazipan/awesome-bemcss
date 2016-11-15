@@ -2,4 +2,8 @@
 
 .card{
     @extend %card;
+
+    &--radius{
+    	@extend %card--radius;   
+    }
 }
