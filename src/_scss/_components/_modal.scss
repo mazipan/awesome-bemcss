@@ -12,9 +12,19 @@
     background-color: rgba(0,0,0,0.4);   
 
     &__header{        
-        padding: 2px 16px;
-        background-color: $blue;
-        color: white;
+        padding: 2px 16px;      
+
+        &--border{
+            border-bottom: 1px solid $grey;
+        }
+
+        &--blue{
+            background-color: $blue;
+            color: white;
+            .modal__close {
+                color: $white;
+            }
+        }
     }
 
     &__content {
@@ -39,15 +49,22 @@
 
     &__footer {
         padding: 2px 16px;
-        background-color: $blue;
-        color: white;
+
+        &--border{
+            border-top: 1px solid $grey;
+        }
+
+        &--blue{
+            background-color: $blue;
+            color: white;
+        }
     }
 
     &__close {
         float: right;
         font-size: 28px;
         font-weight: bold;
-        color: $white;
+        color: $grey;
         cursor: pointer;
         text-decoration: none;
 

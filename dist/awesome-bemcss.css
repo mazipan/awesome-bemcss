@@ -848,7 +848,8 @@ textarea {
     padding: 10px 15px;
     text-decoration: none; }
     .tabs__item a:hover {
-      background-color: #eaeaea; }
+      background-color: #eaeaea;
+      text-decoration: none; }
   .tabs__item--active {
     border-bottom: 2px solid #068AC9; }
     .tabs__item--active a {
@@ -864,7 +865,8 @@ textarea {
     background-color: #eaeaea;
     text-decoration: none; }
     .tabs__itemv a:hover {
-      background-color: #d0d0d0; }
+      background-color: #d0d0d0;
+      text-decoration: none; }
   .tabs__itemv--active {
     border-left: 2px solid #068AC9;
     background-color: #d0d0d0; }
@@ -1084,7 +1086,6 @@ top: 50%;
   cursor: pointer; }
   .popover__content {
     visibility: hidden;
-    width: 120px;
     background-color: #4d4d4d;
     color: #ffffff;
     text-align: center;
@@ -1123,9 +1124,14 @@ top: 50%;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4); }
   .modal__header {
-    padding: 2px 16px;
-    background-color: #068AC9;
-    color: white; }
+    padding: 2px 16px; }
+    .modal__header--border {
+      border-bottom: 1px solid #B6B6B6; }
+    .modal__header--blue {
+      background-color: #068AC9;
+      color: white; }
+      .modal__header--blue .modal__close {
+        color: #ffffff; }
   .modal__content {
     position: relative;
     background-color: #ffffff;
@@ -1140,14 +1146,17 @@ top: 50%;
   .modal__body {
     padding: 2px 16px; }
   .modal__footer {
-    padding: 2px 16px;
-    background-color: #068AC9;
-    color: white; }
+    padding: 2px 16px; }
+    .modal__footer--border {
+      border-top: 1px solid #B6B6B6; }
+    .modal__footer--blue {
+      background-color: #068AC9;
+      color: white; }
   .modal__close {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    color: #ffffff;
+    color: #B6B6B6;
     cursor: pointer;
     text-decoration: none; }
     .modal__close:hover, .modal__close:focus {

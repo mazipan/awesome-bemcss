@@ -112,22 +112,35 @@ var initPagination = (function(){
     });
 })();
 
+/*
+MODAL
+*/
 var initModal = (function(){
-    var modal = document.getElementById('myModal');
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("modal__close")[0];
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+
+    var triggerBtn = $('[data-show=modal]').click(function(event){
+        var modalId = $(this).attr('data-target');        
+        $('#' + modalId).show();
+    });
+
+    $('.modal__close').click(function(event){        
+        $(this).parents('.modal').hide();
+    });
+
+    $(window).click(function(event){
+        if (event.target.className === 'modal') {
+            $(event.target).hide();
         }
-    }
+    });
+
 })();
+
+function modalShow(elementId){
+    $('#' + modalId).show();
+}
+
+function modalHide(elementId){
+    $('#' + modalId).hide();
+}
 
 $(document).ready(function () {
 	'use strict';   

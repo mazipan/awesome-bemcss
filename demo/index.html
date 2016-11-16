@@ -463,15 +463,23 @@
           <h2 class="content__title">Modal</h2>
           <div class="content__wrapper"> 
 
-            <button id="myBtn" 
-                    class="button button--blue" 
-                    data-modal="myModal">
-
-              Open Modal
-              
+            <button class="button button--blue" 
+                    data-show="modal"
+                    data-target="modalPlain">
+              Open Modal              
+            </button>
+            <button class="button button--blue" 
+                    data-show="modal"
+                    data-target="modalBlue">
+              Open Modal              
+            </button>
+            <button class="button button--blue" 
+                    data-show="modal"
+                    data-target="modalBorder">
+              Open Modal              
             </button>
 
-            <div id="myModal" class="modal" role="modal">
+            <div id="modalPlain" class="modal" role="modal">
               <div class="modal__content">
                 <div class="modal__header">
                   <span class="modal__close">×</span>
@@ -482,6 +490,38 @@
                   <p>Some other text...</p>
                 </div>
                 <div class="modal__footer">
+                  <h3>Modal Footer</h3>
+                </div>
+              </div>
+            </div>
+
+            <div id="modalBlue" class="modal" role="modal">
+              <div class="modal__content">
+                <div class="modal__header modal__header--blue">
+                  <span class="modal__close">×</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal__body">
+                  <p>Some text in the Modal Body</p>
+                  <p>Some other text...</p>
+                </div>
+                <div class="modal__footer modal__footer--blue">
+                  <h3>Modal Footer</h3>
+                </div>
+              </div>
+            </div>
+
+            <div id="modalBorder" class="modal" role="modal">
+              <div class="modal__content">
+                <div class="modal__header modal__header--border">
+                  <span class="modal__close">×</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal__body">
+                  <p>Some text in the Modal Body</p>
+                  <p>Some other text...</p>
+                </div>
+                <div class="modal__footer modal__footer--border">
                   <h3>Modal Footer</h3>
                 </div>
               </div>
