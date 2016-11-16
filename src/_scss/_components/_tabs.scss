@@ -15,6 +15,7 @@
             &:hover
             {
                 background-color: $greyLighter;
+                text-decoration: none;
             }
         }
         &--active
@@ -44,6 +45,7 @@
             &:hover
             {
                 background-color: $greyLight;
+                text-decoration: none;
             }
         }
         &--active
