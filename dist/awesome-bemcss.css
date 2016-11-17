@@ -756,8 +756,7 @@ textarea {
   .checkbox + label {
     position: relative;
     display: inline-block;
-    padding-top: 4px;
-    padding-left: 35px;
+    padding: 6px 30px;
     cursor: pointer; }
     .checkbox + label:before {
       position: absolute;
@@ -807,8 +806,7 @@ textarea {
   left: -9999px; }
   .radio + label {
     position: relative;
-    padding-top: 14px;
-    padding-left: 30px;
+    padding: 10px 30px;
     cursor: pointer; }
     .radio + label:before, .radio + label:after {
       position: absolute;
