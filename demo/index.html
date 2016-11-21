@@ -22,8 +22,10 @@
         <meta name="twitter:title" content="AwesomeBemCSS"/>
         <meta name="twitter:description" content="Simple CSS Framework Using BEM Methodology"/>
         
-        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"> 
+        <link rel="stylesheet" type="text/css" href="../dist/awesome-bemcss.css"> 
         <link rel="stylesheet" type="text/css" href="../dist/demo.css"> 
+        <link rel="stylesheet" type="text/css" href="./libs/prism/prism.css"> 
+
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
@@ -32,12 +34,9 @@
   <header role="header" class="site__header header" id="header">
       <div class="header__wrapper">
         <div class="header__brand">
-          <img src="./images/brand-blue.png" />
-          <!--
-          <div class="header__title">
-            AwesomeBemCSS
-          </div>
-          -->
+          <a href="#">
+            <img src="./images/brand-blue.png" />
+          </a>
         </div>
 
         <nav role="nav" class="header__nav">      
@@ -122,6 +121,17 @@
           <p>
             See Github Repo : <a href="https://github.com/mazipan/awesome-bemcss">https://github.com/mazipan/awesome-bemcss</a> 
           </p>
+
+          <h4>How to use</h4>
+<pre><code class="language-markup">
+&lt;!-- awesome-bemcss css depedency --&gt;
+&lt;link  rel="stylesheet" href="{URL_PATH}/css/awesome-bemcss.min.css" rel="stylesheet"  /&gt;
+
+&lt;!-- jquery library --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- awesome-bemcss js depedency --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;</code></pre>
         </section>
 
         <section class="content__typography" id="typography">
@@ -168,41 +178,73 @@
         <section class="content__grids" id="grids">
           <h2 class="content__title">Grids</h2>          
           <h4>Row And Columns</h4>
-          <div class="content__wrapper grids">
-            <div class="grids__row">row (total col in row = 16)</div>
-            <div class="grids__row">
-              <div class="grids__col-16">col-16</div>
+          <div class="content__wrapper grid">
+            <div class="grid__row">row (total col in row = 16)</div>
+            <div class="grid__row">
+              <div class="grid__col-16">col-16</div>
             </div>           
-            <div class="grids__row">
-              <div class="grids__col-3">col-3</div>
-              <div class="grids__col-3">col-3</div>
-              <div class="grids__col-10">col-10</div>
+            <div class="grid__row">
+              <div class="grid__col-3">col-3</div>
+              <div class="grid__col-3">col-3</div>
+              <div class="grid__col-10">col-10</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-1">col-offset-1</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-1">col-offset-1</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-2">col-offset-2</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-2">col-offset-2</div>
             </div>
-            <div class="grids__row">
-              <div class="grids__col-offset-3">col-offset-3</div>
+            <div class="grid__row">
+              <div class="grid__col-offset-3">col-offset-3</div>
             </div>
           </div>
 
+<pre><code class="language-markup">
+&lt;!-- snippet code for grid --&gt;
+&lt;div class="grid"&gt;
+  &lt;div class="grid__row"&gt;row (total col in row = 16)&lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__col-16"&gt;col-16&lt;/div&gt;
+  &lt;/div&gt; 
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__col-3"&gt;col-3&lt;/div&gt;
+    &lt;div class="grid__col-3"&gt;col-3&lt;/div&gt;
+    &lt;div class="grid__col-10"&gt;col-10&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__col-offset-1"&gt;col-offset-1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__col-offset-2"&gt;col-offset-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__col-offset-3"&gt;col-offset-3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
           <h4>Flex Box</h4>
           <div class="content__wrapper">            
-            <div class="grids__flex">
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
+            <div class="grid__flex">
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
             </div>
-            <div class="grids__flex">
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
-              <div class="grids__item">div in flex box</div>
+            <div class="grid__flex">
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
+              <div class="grid__item">div in flex box</div>
             </div>
           </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for grid with flex --&gt;
+&lt;div class="grid__flex"&gt;
+  &lt;div class="grid__item"&gt;div in flex box&lt;/div&gt;
+  &lt;div class="grid__item"&gt;div in flex box&lt;/div&gt;
+  &lt;div class="grid__item"&gt;div in flex box&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
         </section>
 
         <section class="content__buttons" id="buttons">
@@ -216,6 +258,14 @@
             <button class="button button--gray">button--gray</button>
           </div>
 
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;button class="button button--green"&gt;button button--green&lt;/button&gt;
+&lt;button class="button button--red"&gt;button button--red&lt;/button&gt;
+&lt;button class="button button--blue"&gt;button button--blue&lt;/button&gt;
+&lt;button class="button button--orange"&gt;button button--orange&lt;/button&gt;
+&lt;button class="button button--gray"&gt;button button--gray&lt;/button&gt;</code></pre>
+
           <h4>Button Link</h4>
           <div class="content__wrapper">
             <a href="javascript:void(0)" class="button button--green">button--green</a>
@@ -224,6 +274,14 @@
             <a href="javascript:void(0)" class="button button--orange">button--orange</a>
             <a href="javascript:void(0)" class="button button--gray">button--gray</a>
           </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;a href="javascript:void(0)" class="button button--green"&gt;button button--green&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--red"&gt;button button--red&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--blue"&gt;button button--blue&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--orange"&gt;button button--orange&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--gray"&gt;button button--gray&lt;/a&gt;</code></pre>
 
           <h4>Buttons Outline</h4>
           <div class="content__wrapper">
@@ -234,14 +292,30 @@
             <button class="button button-outline--gray">button-outline--gray</button>
           </div>
 
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;button class="button button-outline--green"&gt;button button-outline--green&lt;/button&gt;
+&lt;button class="button button-outline--red"&gt;button button-outline--red&lt;/button&gt;
+&lt;button class="button button-outline--blue"&gt;button button-outline--blue&lt;/button&gt;
+&lt;button class="button button-outline--orange"&gt;button button-outline--orange&lt;/button&gt;
+&lt;button class="button button-outline--gray"&gt;button button-outline--gray&lt;/button&gt;</code></pre>
+
           <h4>Button Radius</h4>
           <div class="content__wrapper">
-            <button class="button button-radius--green">button-radius--green</button>
-            <button class="button button-radius--red">button-radius--red</button>
-            <button class="button button-radius--blue">button-radius--blue</button>
-            <button class="button button-radius--orange">button-radius--orange</button>
-            <button class="button button-radius--gray">button-radius--gray</button>
+            <button class="button button--radius button--green">button-radius--green</button>
+            <button class="button button--radius button--red">button-radius--red</button>
+            <button class="button button--radius button--blue">button-radius--blue</button>
+            <button class="button button--radius button--orange">button-radius--orange</button>
+            <button class="button button--radius button--gray">button-radius--gray</button>
           </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;button class="button button--radius button--green"&gt;button button--radius button--green&lt;/button&gt;
+&lt;button class="button button--radius button--red"&gt;button button--radius button--red&lt;/button&gt;
+&lt;button class="button button--radius button--blue"&gt;button button--radius button--blue&lt;/button&gt;
+&lt;button class="button button--radius button--orange"&gt;button button--radius button--orange&lt;/button&gt;
+&lt;button class="button button--radius button--gray"&gt;button button--radius button--gray&lt;/button&gt;</code></pre>
 
           <h4>Buttons Dropdown</h4>
           <div class="content__wrapper">
@@ -291,6 +365,19 @@
               </ul>
             </button>
           </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button--dropdown --&gt;
+&lt;button class="button button--dropdown button--gray"&gt;
+  &lt;i class="fa fa-cog"&gt;&lt;/i&gt; 
+
+  &lt;ul class="button__menu" role="menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;25&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;50&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;100&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/button&gt;</code></pre>
+
         </section>
 
         <section class="content__forms" id="forms">
@@ -311,6 +398,16 @@
             <textarea class="textfield" id="textarea-1" rows="3" placeholder="textfield" ></textarea>
             <textarea class="textfield textfield--radius" rows="3" id="textarea-3" placeholder="textfield textfield--radius"></textarea>
           </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for textfield --&gt;
+&lt;input class="textfield" id="textfield-1" placeholder="textfield" /&gt;
+&lt;span class="textfield__helper"&gt;This is helper text&lt;span&gt;
+&lt;input class="textfield textfield--error" id="textfield-2" placeholder="textfield textfield--error"/&gt;
+&lt;span class="textfield__error"&gt;This is helper error message&lt;span&gt;
+&lt;input class="textfield textfield--radius" id="textfield-3" placeholder="textfield textfield--radius"/&gt;
+&lt;input class="textfield textfield--radius textfield--error" id="textfield-4" placeholder="textfield textfield--radius textfield--error"/&gt;
+&lt;input class="textfield textfield--large" id="textfield-4" placeholder="textfield textfield--large" /&gt;</code></pre>
 
           <h4>Input Select Box</h4>
           <div class="content__wrapper">
@@ -336,33 +433,17 @@
             </select>
           </div>
 
+<pre><code class="language-markup">
+&lt;!-- snippet code for select --&gt;
+&lt;select class="select" id="select_box-1"&gt;
+  &lt;option value="1"&gt;1&lt;/option&gt;
+  &lt;option value="2"&gt;2&lt;/option&gt;
+  &lt;option value="3"&gt;3&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
           <h4>Tabs</h4>
           <div class="content__wrapper">
-            <div class="content__col-sm">
-              <h5>Tabs Vertical</h5>            
-              <ul class="tabs tabs--vertical">
-                <li class="tabs__itemv tabs__itemv--active" data-target="#overview">
-                  <a href="#overview">Overview</a>
-                </li>
-                <li class="tabs__itemv" data-target="#typography">
-                  <a href="#typography">Typography</a>
-                </li>
-                <li class="tabs__itemv" data-target="#grids">
-                  <a href="#grids">Grids</a>
-                </li>
-                <li class="tabs__itemv" data-target="#buttons">
-                  <a href="#buttons">Buttons</a>
-                </li>
-                <li class="tabs__itemv" data-target="#forms">
-                  <a href="#forms">Forms</a>
-                </li>
-                <li class="tabs__itemv" data-target="#table">
-                  <a href="#table">Table</a>
-                </li>
-              </ul>
-            </div>  
 
-            <div class="content__col-lg">
               <h5>Tabs Horizontal</h5>        
               <ul class="tabs">
                 <li class="tabs__item tabs__item--active" data-target="#overview">
@@ -384,7 +465,75 @@
                   <a href="#table">Table</a>
                 </li>
               </ul>
-            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for tabs --&gt;
+&lt;ul class="tabs"&gt;
+  &lt;li class="tabs__item tabs__item--active" data-target="#overview"&gt;
+    &lt;a href="#overview"&gt;Overview&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#typography"&gt;
+    &lt;a href="#typography"&gt;Typography&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#grids"&gt;
+    &lt;a href="#grids"&gt;Grids&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#buttons"&gt;
+    &lt;a href="#buttons"&gt;Buttons&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#forms"&gt;
+    &lt;a href="#forms"&gt;Forms&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#table"&gt;
+    &lt;a href="#table"&gt;Table&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+              <h5>Tabs Vertical</h5>            
+              <ul class="tabs tabs--vertical">
+                <li class="tabs__itemv tabs__itemv--active" data-target="#overview">
+                  <a href="#overview">Overview</a>
+                </li>
+                <li class="tabs__itemv" data-target="#typography">
+                  <a href="#typography">Typography</a>
+                </li>
+                <li class="tabs__itemv" data-target="#grids">
+                  <a href="#grids">Grids</a>
+                </li>
+                <li class="tabs__itemv" data-target="#buttons">
+                  <a href="#buttons">Buttons</a>
+                </li>
+                <li class="tabs__itemv" data-target="#forms">
+                  <a href="#forms">Forms</a>
+                </li>
+                <li class="tabs__itemv" data-target="#table">
+                  <a href="#table">Table</a>
+                </li>
+              </ul>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for tabs vertical --&gt;
+&lt;ul class="tabs tabs--vertical"&gt;
+  &lt;li class="tabs__itemv tabs__itemv--active" data-target="#overview"&gt;
+    &lt;a href="#overview"&gt;Overview&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#typography"&gt;
+    &lt;a href="#typography"&gt;Typography&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#grids"&gt;
+    &lt;a href="#grids"&gt;Grids&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#buttons"&gt;
+    &lt;a href="#buttons"&gt;Buttons&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#forms"&gt;
+    &lt;a href="#forms"&gt;Forms&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#table"&gt;
+    &lt;a href="#table"&gt;Table&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
           </div>
 
           <h4>Checkboxes</h4>
@@ -395,6 +544,17 @@
             <label for="checkbox-2">Check 2</label>
             <input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/>
             <label for="checkbox-3">Check 3</label>
+          </div>
+
+          <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for checkbox --&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/&gt;
+&lt;label for="checkbox-1"&gt;Check 1&lt;/label&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/&gt;
+&lt;label for="checkbox-2"&gt;Check 2&lt;/label&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/&gt;
+&lt;label for="checkbox-3"&gt;Check 3&lt;/label&gt;</code></pre>
           </div>
 
           <h4>Radio</h4>
@@ -411,30 +571,238 @@
             <label for="radio-4">No</label>       
           </div>
 
+          <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for radio --&gt;
+&lt;input class="radio" type="radio" id="radio-1" name"radio"/&gt;
+&lt;label for="radio-1"&gt;Yes&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-2" name"radio"/&gt;
+&lt;label for="radio-2"&gt;No&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-3" name"radio--blue"/&gt;
+&lt;label for="radio-3"&gt;Yes&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-4" name"radio--blue"/&gt;
+&lt;label for="radio-4"&gt;No&lt;/label&gt;</code></pre>
+          </div>
+
           <h4>Alert</h4>
           <div class="content__wrapper">
             <div class="alert alert--radius alert--green">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--green
             </div>                
             <div class="alert alert--radius alert--red">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--red
             </div> 
             <div class="alert alert--radius alert--blue">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--blue
             </div>    
             <div class="alert alert--radius alert--orange">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--orange
             </div>    
             <div class="alert alert--radius alert--gray">
               <a href="javascript:void(0)" class="alert__close">x</a>
-              <strong>Info!</strong> Better check yourself, you're not looking too good.
+              <strong>Info!</strong> alert alert--radius alert--gray
             </div>         
           </div>
 
+          <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for alert --&gt;
+&lt;div class="alert alert--radius alert--green"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--green
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--red"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--red
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--blue"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--blue
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--orange"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--orange
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--gray"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--gray
+&lt;/div&gt;</code></pre>
+          </div>
+
+          <h4>Popover</h4>
+          <div class="content__wrapper">
+            <div class="popover">
+              <span>Hover Me, I am popover !</span>
+              <div class="popover__content">
+                Hello, I am popover__content !
+              </div>
+            </div>            
+          </div>
+
+          <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for popover --&gt;
+&lt;div class="popover"&gt;
+  &lt;span&gt;Hover Me, I am popover !&lt;/span&gt;
+  &lt;div class="popover__content"&gt;
+    Hello, I am popover__content !
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+        </section>
+
+        <section class="content__card" id="card">
+          <h2 class="content__title">Card</h2>
+          <div class="content__wrapper"> 
+              <div class="card">card</div>
+              <div class="card">card</div>
+              <div class="card">card</div>
+          </div>
+          <div class="content__wrapper"> 
+              <div class="card card--radius">card card--radius</div>
+              <div class="card card--radius">card card--radius</div>
+              <div class="card card--radius">card card--radius</div>
+          </div>
+
+          <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for card --&gt;
+&lt;div class="card"&gt;card&lt;/div&gt;
+&lt;div class="card card--radius"&gt;card card--radius&lt;/div&gt;</code></pre>
+          </div>
+
+        </section>
+
+        <section class="content__card" id="modal">
+          <h2 class="content__title">Modal</h2>
+          <div class="content__wrapper"> 
+
+            <button class="button button--blue" 
+                    data-show="modal"
+                    data-target="modalPlain">
+              Open Modal              
+            </button>
+            <button class="button button--blue" 
+                    data-show="modal"
+                    data-target="modalBlue">
+              Open Modal              
+            </button>
+            <button class="button button--blue" 
+                    data-show="modal"
+                    data-target="modalBorder">
+              Open Modal              
+            </button>
+
+            <div id="modalPlain" class="modal" role="modal">
+              <div class="modal__content">
+                <div class="modal__header">
+                  <span class="modal__close">×</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal__body">
+                  <p>Some text in the Modal Body</p>
+                </div>
+                <div class="modal__footer">
+                  <h3>Modal Footer</h3>
+                </div>
+              </div>
+            </div>
+
+            <div id="modalBlue" class="modal" role="modal">
+              <div class="modal__content">
+                <div class="modal__header modal__header--blue">
+                  <span class="modal__close">×</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal__body">
+                  <p>Some text in the Modal Body</p>
+                </div>
+                <div class="modal__footer modal__footer--blue">
+                  <h3>Modal Footer</h3>
+                </div>
+              </div>
+            </div>
+
+            <div id="modalBorder" class="modal" role="modal">
+              <div class="modal__content">
+                <div class="modal__header modal__header--border">
+                  <span class="modal__close">×</span>
+                  <h2>Modal Header</h2>
+                </div>
+                <div class="modal__body">
+                  <p>Some text in the Modal Body</p>
+                </div>
+                <div class="modal__footer modal__footer--border">
+                  <h3>Modal Footer</h3>
+                </div>
+              </div>
+            </div>
+
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for modal button trigger --&gt;
+&lt;button class="button button--blue" data-show="modal" data-target="modalPlain"&gt;
+  Open Modal 
+&lt;/button&gt;
+&lt;button class="button button--blue" data-show="modal" data-target="modalBlue"&gt;
+  Open Modal 
+&lt;/button&gt;
+&lt;button class="button button--blue" data-show="modal" data-target="modalBorder"&gt;
+  Open Modal 
+&lt;/button&gt;
+
+&lt;!-- snippet code for modal varian --&gt;
+&lt;div id="modalPlain" class="modal" role="modal"&gt;
+  &lt;div class="modal__content"&gt;
+    &lt;div class="modal__header"&gt;
+      &lt;span class="modal__close"&gt;&times;&lt;/span&gt;
+      &lt;h2&gt;Modal Header&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__body"&gt;
+      &lt;p&gt;Some text in the Modal Body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__footer"&gt;
+      &lt;h3&gt;Modal Footer&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="modalBlue" class="modal" role="modal"&gt;
+  &lt;div class="modal__content"&gt;
+    &lt;div class="modal__header modal__header--blue"&gt;
+      &lt;span class="modal__close"&gt;&times;&lt;/span&gt;
+      &lt;h2&gt;Modal Header&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__body"&gt;
+      &lt;p&gt;Some text in the Modal Body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__footer modal__footer--blue"&gt;
+      &lt;h3&gt;Modal Footer&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="modalBorder" class="modal" role="modal"&gt;
+  &lt;div class="modal__content"&gt;
+    &lt;div class="modal__header modal__header--border"&gt;
+      &lt;span class="modal__close"&gt;&times;&lt;/span&gt;
+      &lt;h2&gt;Modal Header&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__body"&gt;
+      &lt;p&gt;Some text in the Modal Body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__footer modal__footer--border"&gt;
+      &lt;h3&gt;Modal Footer&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+          </div>
         </section>
 
         <section class="content__table" id="table">
@@ -473,6 +841,37 @@
                 </tbody> 
               </table>      
 
+<pre><code class="language-markup">
+&lt;!-- snippet code for table --&gt;
+&lt;table class="table"&gt;
+  &lt;thead class="table__head"&gt;
+    &lt;tr&gt;
+      &lt;th class="table__sort--asc" sortable="true"&gt;#&lt;/th&gt;
+      &lt;th class="table__sort--desc" sortable="true"&gt;First Name&lt;/th&gt;
+      &lt;th&gt;Last Name&lt;/th&gt;
+      &lt;th&gt;Username&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class="table__body"&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;<br /> &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
 
               <h4>Pagination</h4>   
               <ul class="pager"> 
@@ -522,6 +921,57 @@
                   <a href="javascript:void(0)" class="pager__page">Next</a> 
                 </li> 
               </ul> 
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for pager --&gt;
+&lt;ul class="pager"&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Previous&lt;/a&gt; 
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;1&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;2&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;3&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;4&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;5&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Next&lt;/a&gt; 
+  &lt;/li&gt; 
+&lt;/ul&gt;
+
+&lt;!-- snippet code for pager--radius --&gt;
+&lt;ul class="pager pager--radius"&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Previous&lt;/a&gt; 
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;1&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;2&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;3&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;4&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;5&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Next&lt;/a&gt; 
+  &lt;/li&gt; 
+&lt;/ul&gt;</code></pre>
               
           </div>
         </section>
@@ -583,6 +1033,8 @@
 
   <script src="./libs/jquery.min.js"></script>
   <script src="../src/awesome-bemcss.js"></script>
+  <script src="./libs/prism/prism.js"></script>
+  <script src="https://use.fontawesome.com/89344806bd.js"></script>
 
 </body>
 </html>

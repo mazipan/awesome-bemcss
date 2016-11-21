@@ -1,0 +1,9 @@
+@import "../_components/card";
+
+.card{
+    @extend %card;
+
+    &--radius{
+    	@extend %card--radius;   
+    }
+}

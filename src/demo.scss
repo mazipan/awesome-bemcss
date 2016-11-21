@@ -109,27 +109,6 @@
 	}
 }
 
-/*
--- TABS BLOCK --
-*/
-.tabs{
-    @extend %tabs;
-    &__item{
-        @extend %tabs__item;
-
-        &--active{
-            @extend %tabs__item--active;
-        }
-    }
-    &__itemv
-    {
-        @extend %tabs__itemv;
-
-        &--active{
-            @extend %tabs__itemv--active;
-        }
-    }
-}
 
 
 /*
@@ -152,219 +131,61 @@
 	}
 }
 
+
 /*
--- GRIDS BLOCK --
+-- GRID BLOCK --
 */
-.grids{
-    &__flex{
-        @extend %flex;
+.grid{
+    &__flex, &__row{
         margin: 2px 0;
     }
     &__item{
-        border: 1px solid $grey;    
-        padding: 10px;
         width: 100%;
+        padding: 1em 0;
+        border: 1px solid $grey;
+        text-align: center;
     }
-	&__row{
-		@extend %row;    
-		border: 1px solid $grey;
-    	padding: 10px;
-    	margin: 2px 0;
-	}
-	&__col-1{
-		@extend %col-1;
-		border: 1px solid $grey;
-    	padding: 10px;
-	}
-	&__col-2{
-		@extend %col-2;
-		border: 1px solid $grey;
-    	padding: 10px;
-	}
-	&__col-3{
-		@extend %col-3;
-		border: 1px solid $grey;
-    	padding: 10px;
-	}
-	&__col-10{
-		@extend %col-10;
-		border: 1px solid $grey;
-    	padding: 10px;
-	}
+    
+    $columnCount : 16 !default;
+    $break-medium: 63.750em;
 
-	&__col-offset-1{
-		@extend %col-offset-1;
-		border: 1px solid $grey;
-    	padding: 10px;
-	}
-	&__col-offset-2{
-		@extend %col-offset-2;
-		border: 1px solid $grey;
-    	padding: 10px;
-	}
-	&__col-offset-3{
-		@extend %col-offset-3;
-		border: 1px solid $grey;
-    	padding: 10px;
-	}
+    @for $i from 1 through $columnCount {
+        &__col-#{$i}{
+            padding: 1em 0;
+            border: 1px solid $grey;
+            text-align: center;
+        }
+    }
+    @for $i from 1 through $columnCount {
+        &__col-offset-#{$i}{
+            padding: 1em 0;
+            border: 1px solid $grey;
+            text-align: center;
+        }
+    }
 }
 
-
 /*
--- BUTTON BLOCK --
+-- FOR DEMO ONLY --
 */
 .button{
-	@extend %button;
-    // just for demo usage
     margin: .1em;
-
-    &--dropdown{
-        @extend %button--dropdown;
-    }
-
-    &__menu{
-        @extend %button__menu;
-    }
-
-	@for $i from 1 through length($buttonVariansName) { 
-		&--#{nth($buttonVariansName, $i)} {
-			@extend %button--#{nth($buttonVariansName, $i)};
-		}
-		&-outline--#{nth($buttonVariansName, $i)} {
-			@extend %button-outline--#{nth($buttonVariansName, $i)};
-		}
-		&-radius--#{nth($buttonVariansName, $i)} {
-			@include border-radius(.25em); 
-			@extend %button--#{nth($buttonVariansName, $i)};
-		}
-	}
 }
 
-/*
--- CHECKBOXES
-*/
-.checkbox{
-	@extend %checkbox;
+.popover{
+    text-align: center;
+    padding: 1em 0;
+    border: 1px solid $grey;
 }
 
-/*
--- RADIO
-*/
-.radio{
-	@extend %radio;
-	&--blue{
-		@extend %radio--blue;
-	}
+.card{
+    padding: 1em 0;
+    display: inline-block;
+    width: 25%;
+    margin-right: 1em;
+    height: 150px;
+    background-color: $blue;
 }
-
-/*
--- TEXTFIELD --
-*/
-.textfield{
-    @extend %textfield;
-
-    &__helper
-    {
-        @extend %textfield__helper;
-    }
-
-    &__error
-    {
-        @extend %textfield__error;
-    }
-
-    &--radius
-    {
-        @extend %textfield--radius;
-    }
-
-    &--error
-    {
-        @extend %textfield--error;
-    }
-
-    &--large
-    {
-        @extend %textfield--large;
-    }
-}
-
-
-/*
--- SELECT --
-*/
-.select{
-    @extend %select;
-
-    &--radius
-    {
-        @extend %select--radius;
-    }
-}
-
-/*
--- ALERT --
-*/
-.alert{
-    @extend %alert;
-
-    &--radius{
-        @extend %alert--radius;
-    }
-
-    @for $i from 1 through length($buttonVariansName) {
-        &--#{nth($buttonVariansName, $i)}{
-            @extend %alert--#{nth($buttonVariansName, $i)};
-        }          
-    }
-}
-
-/*
--- TABLE --
-*/
-.table{
-    @extend %table;
-
-    &__head{
-        @extend %table__head;
-    }
-
-    &__body{
-        @extend %table__body;
-    }
-
-    &__sort{
-        &--asc
-        {
-            @extend %table__sort--asc;
-        }
-        &--desc
-        {
-            @extend %table__sort--desc;
-        }
-    }
-}
-
-
-/*
--- PAGER --
-*/
-.pager{
-    @extend %pager;
-
-    &__page{
-        @extend %pager__page;
-
-        &--active{
-            @extend %pager__page--active;
-        }
-    }
-
-    &--radius{
-        @extend %pager--radius;
-    }
-}
-
 
 /*
 -- FOOTER BLOCK --

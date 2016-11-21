@@ -112,6 +112,36 @@ var initPagination = (function(){
     });
 })();
 
+/*
+MODAL
+*/
+var initModal = (function(){
+
+    var triggerBtn = $('[data-show=modal]').click(function(event){
+        var modalId = $(this).attr('data-target');        
+        $('#' + modalId).show();
+    });
+
+    $('.modal__close').click(function(event){        
+        $(this).parents('.modal').hide();
+    });
+
+    $(window).click(function(event){
+        if (event.target.className === 'modal') {
+            $(event.target).hide();
+        }
+    });
+
+})();
+
+function modalShow(elementId){
+    $('#' + modalId).show();
+}
+
+function modalHide(elementId){
+    $('#' + modalId).hide();
+}
+
 $(document).ready(function () {
 	'use strict';   
 
@@ -120,6 +150,7 @@ $(document).ready(function () {
     initAlertClose;
     initTableSort;
     initPagination;
+    initModal;
 
 });
 
