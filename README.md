@@ -7,6 +7,26 @@ Simple CSS Framework with BEM CSS convention implementation
 <h3>Demo And Cheatsheet</h3>
 <a href="https://mazipan.github.io/demo/awesome-bemcss/">https://mazipan.github.io/demo/awesome-bemcss/</a>
 
+<h3>Stable Release</h3>
+- <a href="https://github.com/mazipan/awesome-bemcss/releases/tag/v0.0.2">v.0.0.2</a>
+- <a href="https://github.com/mazipan/awesome-bemcss/releases/tag/v0.0.1">v.0.0.1</a>
+- <a href="https://github.com/mazipan/awesome-bemcss/releases">See all releases</a>
+
+<h3>Supported Component (in alphabetical order)</h3>
+- alert 
+- button (basic, outline, radius, dropdown)
+- card
+- checkbox (black and blue theme)
+- grid system (traditional grid and flex)
+- modal (white and blue theme)
+- pagination (basic and radius)
+- popover (dark theme)
+- radio (black and blue theme)
+- select
+- table (support sort arrow view)
+- tabs (horizontal and vertical)
+- textfield (basic for input text and textarea)
+
 <h3>Using Technology</h3>
 - SCSS from SASS 
 - HTML
