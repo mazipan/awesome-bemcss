@@ -10,6 +10,11 @@
     cursor: pointer;
     -webkit-appearance: none;
 
+    &:hover, &:focus, &:active
+    {
+        text-decoration: none;
+    }
+
     &--radius{
         @include border-radius(.25em);         
     }
@@ -23,7 +28,6 @@
             {
                 background: nth($buttonVariansHover, $i);
                 color: nth($buttonVariansFont, $i);
-                text-decoration: none;
             }
         }
     }
@@ -31,14 +35,13 @@
     @for $j from 1 through length($buttonVariansName) {  
         &-outline--#{nth($buttonVariansName, $j)} {
             border: 1px solid nth($buttonVariansHex, $j); 
-            background: $white; 
+            background: transparent; 
             color: nth($buttonVariansHex, $j);
 
             &:hover
             {
                 border: 1px solid nth($buttonVariansHover, $j);
                 color: nth($buttonVariansHover, $j);
-                text-decoration: none;
             }
         }
     }

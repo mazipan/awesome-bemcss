@@ -46,7 +46,7 @@ $brownLighter   : lighten($brown,20%) !default;
 
 $yellowLighter	: #faf5b1;
 
-$buttonVariansName: green, red, blue, orange, gray;
-$buttonVariansHex: $green, $red, $blue, $orange, $grey;
-$buttonVariansHover: $greenLight, $redLight, $blueLight, $orangeLight, $greyLight;
-$buttonVariansFont: $white, $white, $white, $white, $black;
+$buttonVariansName: green, red, blue, orange, gray, white;
+$buttonVariansHex: $green, $red, $blue, $orange, $grey, $white;
+$buttonVariansHover: $greenLight, $redLight, $blueLight, $orangeLight, $greyLight, $white;
+$buttonVariansFont: $white, $white, $white, $white, $black, $black;
