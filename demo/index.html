@@ -38,41 +38,39 @@
             <img src="./images/brand-blue.png" />
           </a>
         </div>
-
-        <nav role="nav" class="header__nav">      
-
-          <ul class="tabs">
-            <li class="tabs__item tabs__item--active" data-target="#overview">
-              <a href="#overview">Overview</a>
-            </li>
-            <li class="tabs__item" data-target="#typography">
-              <a href="#typography">Typography</a>
-            </li>
-            <li class="tabs__item" data-target="#grids">
-              <a href="#grids">Grids</a>
-            </li>
-            <li class="tabs__item" data-target="#buttons">
-              <a href="#buttons">Buttons</a>
-            </li>
-            <li class="tabs__item" data-target="#forms">
-              <a href="#forms">Forms</a>
-            </li>
-            <li class="tabs__item" data-target="#table">
-              <a href="#table">Table</a>
-            </li>
-          </ul>
-
-        </nav>
-
       </div>
   </header>
 
   <main role="main" class="site__main main" id="main">
-      <div class="main__title">
+      <div class="main__jumbotron">
+        <div class="main__jumbotron-wrapper">
+          <div class="grid__row">
+            <h1>
+              Awesome-BEMCSS
+            </h1>
+            <h2>
+              simple framework CSS that build with BEM CSS convention as alternative of Twitter Bootstrap.
+            </h2>
+          </div>
+          <div class="grid__row">            
+            <a class="button button-outline--white" href="https://github.com/mazipan/awesome-bemcss/releases">
+              <i class="fa fa-cloud-download"></i> Download
+            </a>
+            <a class="button button-outline--white" href="https://github.com/mazipan/awesome-bemcss">
+              <i class="fa fa-github"></i> Fork on Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__row">
         <h1>AwesomeBemCSS 
           <small>(demo and cheatsheet)</small>
         </h1>
       </div>
+
+      <div class="main__row">
+        
       <nav role="nav" class="main__nav nav" id="nav">
         <ul class="nav__tabs tabs tabs--vertical">
             <li class="tabs__itemv tabs__itemv--active" data-target="#overview">
@@ -977,6 +975,8 @@
         </section>
 
       </article>
+      </div>
+
   </main>
 
   <footer role="footer" class="site__footer footer" id="footer">
