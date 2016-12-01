@@ -5,7 +5,7 @@ Simple CSS Framework with BEM CSS convention implementation
 <img src="http://i1176.photobucket.com/albums/x322/mazipanneh/awesome-bemcss_zpsrlpgn4yj.png" />
 
 <h3>Demo And Cheatsheet</h3>
-<a href="https://mazipan.github.io/demo/awesome-bemcss/">https://mazipan.github.io/demo/awesome-bemcss/</a>
+<a href="https://mazipan.github.io/awesome-bemcss/demo/">https://mazipan.github.io/awesome-bemcss/demo/</a>
 
 <h3>Stable Release</h3>
 - <a href="https://github.com/mazipan/awesome-bemcss/releases/tag/v0.0.2">v.0.0.2</a>
