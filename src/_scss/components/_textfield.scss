@@ -11,12 +11,7 @@
     &__error {
         @extend %textfield__error;
     }
-    
-    &--radius
-    {
-        @extend %textfield--radius;
-    }
-    
+        
     &--error
     {
         @extend %textfield--error;
@@ -25,5 +20,20 @@
     &--large 
     {
         @extend %textfield--large;
+    }
+    
+    &--radius
+    {
+        @extend %textfield--radius;
+    }
+
+    &--radius-left
+    {
+        @extend %textfield--radius-left;
+    }
+
+    &--radius-right
+    {
+        @extend %textfield--radius-right;
     }
 }

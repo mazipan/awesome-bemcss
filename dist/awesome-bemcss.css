@@ -1002,12 +1002,18 @@ textarea {
     color: #ed1c24;
     font-size: 1.2rem;
     line-height: 2; }
-  .textfield--radius {
-    border-radius: 0.25em; }
   .textfield--error {
     border: 1px solid #ed1c24; }
   .textfield--large {
     padding: 20px; }
+  .textfield--radius {
+    border-radius: 0.25em; }
+  .textfield--radius-left {
+    border-top-left-radius: 0.25em;
+    border-bottom-left-radius: 0.25em; }
+  .textfield--radius-right {
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em; }
 
 .textfield, .select {
   padding: 6px 12px;
@@ -1031,12 +1037,18 @@ textarea {
     color: #ed1c24;
     font-size: 1.2rem;
     line-height: 2; }
-  .textfield--radius {
-    border-radius: 0.25em; }
   .textfield--error {
     border: 1px solid #ed1c24; }
   .textfield--large {
     padding: 20px; }
+  .textfield--radius {
+    border-radius: 0.25em; }
+  .textfield--radius-left {
+    border-top-left-radius: 0.25em;
+    border-bottom-left-radius: 0.25em; }
+  .textfield--radius-right {
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em; }
 
 .select {
   -webkit-appearance: none;

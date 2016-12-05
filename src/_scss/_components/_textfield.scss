@@ -19,12 +19,7 @@
         font-size: 1.2rem;
         line-height: 2;
     }
-    
-    &--radius
-    {
-        @include border-radius(0.25em);
-    }
-    
+        
     &--error
     {
         border: 1px solid $red;
@@ -33,5 +28,20 @@
     &--large 
     {
         padding: 20px;
+    }
+
+    &--radius
+    {
+        @include border-radius(0.25em);
+    }
+
+    &--radius-left{
+        border-top-left-radius: 0.25em;
+        border-bottom-left-radius: 0.25em;
+    }
+
+    &--radius-right{
+        border-top-right-radius: 0.25em;
+        border-bottom-right-radius: 0.25em;        
     }
 }

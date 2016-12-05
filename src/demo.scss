@@ -179,7 +179,7 @@
         }
     }
     @for $i from 1 through $columnCount {
-        &__col-offset-#{$i}{
+        &__offset-#{$i}{
             padding: 1em 0;
             border: 1px solid $grey;
             text-align: center;
