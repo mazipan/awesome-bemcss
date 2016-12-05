@@ -1,7 +1,6 @@
 @import "../_components/grids";
 
 $columnCount : 16 !default;
-$break-medium: 63.750em;
 
 .clearfix{
 	@extend %clearfix;
@@ -15,14 +14,27 @@ $break-medium: 63.750em;
 		@extend %flex;
 	}
 
+	/*
+	[class*="col-"] {
+
+	}
+	*/
+
 	@for $i from 1 through $columnCount {
 		&__col-#{$i}{
 			@extend %col-#{$i};
+		}	
+	}
+
+	@for $i from 1 through $columnCount {
+		&__col-m-#{$i}{
+			@extend %col-m-#{$i};
 		}
 	}
+
 	@for $i from 1 through $columnCount {
-		&__col-offset-#{$i}{
-			@extend %col-offset-#{$i};
+		&__offset-#{$i}{
+			@extend %offset-#{$i};
 		}
 	}
 }

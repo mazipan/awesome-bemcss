@@ -14,22 +14,31 @@
     align-items: center;
 }
 
-$columnCount : 16 !default;
-$break-medium: 63.750em;
+$columnCount 		: 16 !default;
+$breakPointDesktop 	: 768 !default;
+$breakPointTablet	: 600 !default;
 
 @for $i from 1 through $columnCount {
 	%col-#{$i}{
 		float: left;
-		width: ((100/$columnCount) * $i) *1%;
+		width: 100%;
 
-		@media only screen and (max-width:$break-medium) {
-			width: 100%;
+		@media only screen and (min-width: #{$breakPointDesktop}px) {
+			width: ((100/$columnCount) * $i) *1%;
 		}
-
+		
 	}
-}
-@for $i from 1 through $columnCount {
-	%col-offset-#{$i}{
+
+	%col-m-#{$i}{
+		float: left;
+
+		@media only screen and (min-width: #{$breakPointTablet}px) {
+			width: ((100/$columnCount) * $i) *1%;
+		}
+		
+	}
+
+	%offset-#{$i}{
 		margin-left: ((100/$columnCount) * $i) *1%;
 	}
 }

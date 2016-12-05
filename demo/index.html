@@ -205,46 +205,46 @@
             <h2 class="content__title">Grids</h2>          
             <h4>Row And Columns</h4>
             <div class="content__wrapper grid">
-              <div class="grid__row">row (total col in row = 16)</div>
+              <div class="grid__row">grid__row (total col in row = 16)</div>
               <div class="grid__row">
-                <div class="grid__col-16">col-16</div>
+                <div class="grid__col-16">grid__col-16</div>
               </div>           
               <div class="grid__row">
-                <div class="grid__col-3">col-3</div>
-                <div class="grid__col-3">col-3</div>
-                <div class="grid__col-10">col-10</div>
+                <div class="grid__col-3">grid__col-3</div>
+                <div class="grid__col-3">grid__col-3</div>
+                <div class="grid__col-10">grid__col-10</div>
               </div>
               <div class="grid__row">
-                <div class="grid__col-offset-1">col-offset-1</div>
+                <div class="grid__offset-1">grid__offset-1</div>
               </div>
               <div class="grid__row">
-                <div class="grid__col-offset-2">col-offset-2</div>
+                <div class="grid__offset-2">grid__offset-2</div>
               </div>
               <div class="grid__row">
-                <div class="grid__col-offset-3">col-offset-3</div>
+                <div class="grid__offset-3">grid__offset-3</div>
               </div>
             </div>
 
 <pre><code class="language-markup">
 &lt;!-- snippet code for grid --&gt;
 &lt;div class="grid"&gt;
-  &lt;div class="grid__row"&gt;row (total col in row = 16)&lt;/div&gt;
+  &lt;div class="grid__row"&gt;grid__row (total col in row = 16)&lt;/div&gt;
   &lt;div class="grid__row"&gt;
-    &lt;div class="grid__col-16"&gt;col-16&lt;/div&gt;
+    &lt;div class="grid__col-16"&gt;grid__col-16&lt;/div&gt;
   &lt;/div&gt; 
   &lt;div class="grid__row"&gt;
-    &lt;div class="grid__col-3"&gt;col-3&lt;/div&gt;
-    &lt;div class="grid__col-3"&gt;col-3&lt;/div&gt;
-    &lt;div class="grid__col-10"&gt;col-10&lt;/div&gt;
+    &lt;div class="grid__col-3"&gt;grid__col-3&lt;/div&gt;
+    &lt;div class="grid__col-3"&gt;grid__col-3&lt;/div&gt;
+    &lt;div class="grid__col-10"&gt;grid__col-10&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="grid__row"&gt;
-    &lt;div class="grid__col-offset-1"&gt;col-offset-1&lt;/div&gt;
+    &lt;div class="grid__offset-1"&gt;grid__offset-1&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="grid__row"&gt;
-    &lt;div class="grid__col-offset-2"&gt;col-offset-2&lt;/div&gt;
+    &lt;div class="grid__offset-2"&gt;grid__offset-2&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="grid__row"&gt;
-    &lt;div class="grid__col-offset-3"&gt;col-offset-3&lt;/div&gt;
+    &lt;div class="grid__offset-3"&gt;grid__offset-3&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
@@ -467,6 +467,174 @@
   &lt;option value="3"&gt;3&lt;/option&gt;
 &lt;/select&gt;</code></pre>
 
+            <h4>Checkboxes</h4>
+            <div class="content__wrapper">
+              <input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/>
+              <label for="checkbox-1">Check 1</label>
+              <input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/>
+              <label for="checkbox-2">Check 2</label>
+              <input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/>
+              <label for="checkbox-3">Check 3</label>
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for checkbox --&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/&gt;
+&lt;label for="checkbox-1"&gt;Check 1&lt;/label&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/&gt;
+&lt;label for="checkbox-2"&gt;Check 2&lt;/label&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/&gt;
+&lt;label for="checkbox-3"&gt;Check 3&lt;/label&gt;</code></pre>
+            </div>
+
+            <h4>Radio</h4>
+            <div class="content__wrapper">
+              <input class="radio" type="radio" id="radio-1" name="radio"/>
+              <label for="radio-1">Yes</label>
+              <input class="radio" type="radio" id="radio-2" name="radio"/>
+              <label for="radio-2">No</label>     
+            </div>
+            <div class="content__wrapper">
+              <input class="radio radio--blue" type="radio" id="radio-3" name="radio-blue"/>
+              <label for="radio-3">Yes</label>
+              <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
+              <label for="radio-4">No</label>       
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for radio --&gt;
+&lt;input class="radio" type="radio" id="radio-1" name"radio"/&gt;
+&lt;label for="radio-1"&gt;Yes&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-2" name"radio"/&gt;
+&lt;label for="radio-2"&gt;No&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-3" name"radio--blue"/&gt;
+&lt;label for="radio-3"&gt;Yes&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-4" name"radio--blue"/&gt;
+&lt;label for="radio-4"&gt;No&lt;/label&gt;</code></pre>
+            </div>
+
+            <h4>Form Group</h4>
+            <div class="content__wrapper form">
+              <div class="form__group">
+                <div class="form__label">
+                  I am label :
+                </div>    
+                <input class="textfield" placeholder="I am placeholder" />            
+              </div>
+              <div class="form__group">
+                <div class="form__label form__label--required">
+                  I am required label :
+                </div>    
+                <input class="textfield" placeholder="I am placeholder" />            
+              </div>
+              <div class="form__group">
+                <div class="form__label">
+                  I am label :
+                </div>    
+                <div class="form__wrapper">
+                  <input class="checkbox" type="checkbox" id="checkbox-form-1" name"checkbox-form"/>
+                  <label for="checkbox-form-1">Check 1</label>
+                  <input class="checkbox" type="checkbox" id="checkbox-form-2" name"checkbox-form"/>
+                  <label for="checkbox-form-2">Check 2</label>                  
+                </div>          
+              </div>
+              <div class="form__group">
+                <div class="form__label">
+                  I am label :
+                </div>    
+                <div class="form__wrapper">
+                  <input class="radio" type="radio" id="radio-form-1" name="radio-form"/>
+                  <label for="radio-form-1">Yes</label>
+                  <input class="radio" type="radio" id="radio-form-2" name="radio-form"/>
+                  <label for="radio-form-2">No</label>                   
+                </div>          
+              </div>
+              <div class="form__group">
+                <div class="form__icon form__icon--radius-left">
+                  Rp.
+                </div>
+                <input class="textfield" placeholder="I am placeholder" />                
+              </div>
+              <div class="form__group">
+                <input class="textfield" placeholder="I am placeholder" /> 
+                <div class="form__icon form__icon--radius-right">
+                  @gmail.com
+                </div>               
+              </div>
+            </div>
+
+            <h4>Alert</h4>
+            <div class="content__wrapper">
+              <div class="alert alert--radius alert--green">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--green
+              </div>                
+              <div class="alert alert--radius alert--red">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--red
+              </div> 
+              <div class="alert alert--radius alert--blue">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--blue
+              </div>    
+              <div class="alert alert--radius alert--orange">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--orange
+              </div>    
+              <div class="alert alert--radius alert--gray">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--gray
+              </div>         
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for alert --&gt;
+&lt;div class="alert alert--radius alert--green"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--green
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--red"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--red
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--blue"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--blue
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--orange"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--orange
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--gray"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--gray
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <h4>Popover</h4>
+            <div class="content__wrapper">
+              <div class="popover">
+                <span>Hover Me, I am popover !</span>
+                <div class="popover__content">
+                  Hello, I am popover__content !
+                </div>
+              </div>            
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for popover --&gt;
+&lt;div class="popover"&gt;
+  &lt;span&gt;Hover Me, I am popover !&lt;/span&gt;
+  &lt;div class="popover__content"&gt;
+    Hello, I am popover__content !
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
             <h4>Tabs</h4>
             <div class="content__wrapper">
 
@@ -560,124 +728,6 @@
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-            </div>
-
-            <h4>Checkboxes</h4>
-            <div class="content__wrapper">
-              <input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/>
-              <label for="checkbox-1">Check 1</label>
-              <input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/>
-              <label for="checkbox-2">Check 2</label>
-              <input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/>
-              <label for="checkbox-3">Check 3</label>
-            </div>
-
-            <div class="content__wrapper">
-<pre><code class="language-markup">
-&lt;!-- snippet code for checkbox --&gt;
-&lt;input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/&gt;
-&lt;label for="checkbox-1"&gt;Check 1&lt;/label&gt;
-&lt;input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/&gt;
-&lt;label for="checkbox-2"&gt;Check 2&lt;/label&gt;
-&lt;input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/&gt;
-&lt;label for="checkbox-3"&gt;Check 3&lt;/label&gt;</code></pre>
-            </div>
-
-            <h4>Radio</h4>
-            <div class="content__wrapper">
-              <input class="radio" type="radio" id="radio-1" name="radio"/>
-              <label for="radio-1">Yes</label>
-              <input class="radio" type="radio" id="radio-2" name="radio"/>
-              <label for="radio-2">No</label>     
-            </div>
-            <div class="content__wrapper">
-              <input class="radio radio--blue" type="radio" id="radio-3" name="radio-blue"/>
-              <label for="radio-3">Yes</label>
-              <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
-              <label for="radio-4">No</label>       
-            </div>
-
-            <div class="content__wrapper">
-<pre><code class="language-markup">
-&lt;!-- snippet code for radio --&gt;
-&lt;input class="radio" type="radio" id="radio-1" name"radio"/&gt;
-&lt;label for="radio-1"&gt;Yes&lt;/label&gt;
-&lt;input class="radio" type="radio" id="radio-2" name"radio"/&gt;
-&lt;label for="radio-2"&gt;No&lt;/label&gt;
-&lt;input class="radio" type="radio" id="radio-3" name"radio--blue"/&gt;
-&lt;label for="radio-3"&gt;Yes&lt;/label&gt;
-&lt;input class="radio" type="radio" id="radio-4" name"radio--blue"/&gt;
-&lt;label for="radio-4"&gt;No&lt;/label&gt;</code></pre>
-            </div>
-
-            <h4>Alert</h4>
-            <div class="content__wrapper">
-              <div class="alert alert--radius alert--green">
-                <a href="javascript:void(0)" class="alert__close">x</a>
-                <strong>Info!</strong> alert alert--radius alert--green
-              </div>                
-              <div class="alert alert--radius alert--red">
-                <a href="javascript:void(0)" class="alert__close">x</a>
-                <strong>Info!</strong> alert alert--radius alert--red
-              </div> 
-              <div class="alert alert--radius alert--blue">
-                <a href="javascript:void(0)" class="alert__close">x</a>
-                <strong>Info!</strong> alert alert--radius alert--blue
-              </div>    
-              <div class="alert alert--radius alert--orange">
-                <a href="javascript:void(0)" class="alert__close">x</a>
-                <strong>Info!</strong> alert alert--radius alert--orange
-              </div>    
-              <div class="alert alert--radius alert--gray">
-                <a href="javascript:void(0)" class="alert__close">x</a>
-                <strong>Info!</strong> alert alert--radius alert--gray
-              </div>         
-            </div>
-
-            <div class="content__wrapper">
-<pre><code class="language-markup">
-&lt;!-- snippet code for alert --&gt;
-&lt;div class="alert alert--radius alert--green"&gt;
-  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
-  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--green
-&lt;/div&gt; 
-&lt;div class="alert alert--radius alert--red"&gt;
-  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
-  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--red
-&lt;/div&gt; 
-&lt;div class="alert alert--radius alert--blue"&gt;
-  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
-  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--blue
-&lt;/div&gt; 
-&lt;div class="alert alert--radius alert--orange"&gt;
-  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
-  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--orange
-&lt;/div&gt; 
-&lt;div class="alert alert--radius alert--gray"&gt;
-  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
-  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--gray
-&lt;/div&gt;</code></pre>
-            </div>
-
-            <h4>Popover</h4>
-            <div class="content__wrapper">
-              <div class="popover">
-                <span>Hover Me, I am popover !</span>
-                <div class="popover__content">
-                  Hello, I am popover__content !
-                </div>
-              </div>            
-            </div>
-
-            <div class="content__wrapper">
-<pre><code class="language-markup">
-&lt;!-- snippet code for popover --&gt;
-&lt;div class="popover"&gt;
-  &lt;span&gt;Hover Me, I am popover !&lt;/span&gt;
-  &lt;div class="popover__content"&gt;
-    Hello, I am popover__content !
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
             </div>
 
           </section>

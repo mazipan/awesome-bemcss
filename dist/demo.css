@@ -463,31 +463,31 @@ textarea {
 
 .main__nav {
   float: left;
-  width: 12.5%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .main__nav {
-      width: 100%; } }
+      width: 12.5%; } }
 
 .content__col-sm {
   float: left;
-  width: 18.75%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .content__col-sm {
-      width: 100%; } }
+      width: 18.75%; } }
 
 .content__col-lg {
   float: left;
-  width: 62.5%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .content__col-lg {
-      width: 100%; } }
+      width: 62.5%; } }
 
 .main__content {
   float: left;
-  width: 87.5%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .main__content {
-      width: 100%; } }
+      width: 87.5%; } }
 
 /*
 border: 1px solid #00d1b2;

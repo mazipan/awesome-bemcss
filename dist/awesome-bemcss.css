@@ -461,7 +461,7 @@ textarea {
   .grid__row:after {
     clear: both; }
 
-.grid__flex {
+.grid__flex, .form__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,163 +474,266 @@ textarea {
 
 .grid__col-1 {
   float: left;
-  width: 6.25%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-1 {
-      width: 100%; } }
+      width: 6.25%; } }
+
+.grid__col-m-1 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-1 {
+      width: 6.25%; } }
+
+.grid__offset-1 {
+  margin-left: 6.25%; }
 
 .grid__col-2 {
   float: left;
-  width: 12.5%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-2 {
-      width: 100%; } }
+      width: 12.5%; } }
+
+.grid__col-m-2 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-2 {
+      width: 12.5%; } }
+
+.grid__offset-2 {
+  margin-left: 12.5%; }
 
 .grid__col-3 {
   float: left;
-  width: 18.75%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-3 {
-      width: 100%; } }
+      width: 18.75%; } }
+
+.grid__col-m-3 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-3 {
+      width: 18.75%; } }
+
+.grid__offset-3 {
+  margin-left: 18.75%; }
 
 .grid__col-4 {
   float: left;
-  width: 25%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-4 {
-      width: 100%; } }
+      width: 25%; } }
+
+.grid__col-m-4 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-4 {
+      width: 25%; } }
+
+.grid__offset-4 {
+  margin-left: 25%; }
 
 .grid__col-5 {
   float: left;
-  width: 31.25%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-5 {
-      width: 100%; } }
+      width: 31.25%; } }
+
+.grid__col-m-5 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-5 {
+      width: 31.25%; } }
+
+.grid__offset-5 {
+  margin-left: 31.25%; }
 
 .grid__col-6 {
   float: left;
-  width: 37.5%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-6 {
-      width: 100%; } }
+      width: 37.5%; } }
+
+.grid__col-m-6 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-6 {
+      width: 37.5%; } }
+
+.grid__offset-6 {
+  margin-left: 37.5%; }
 
 .grid__col-7 {
   float: left;
-  width: 43.75%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-7 {
-      width: 100%; } }
+      width: 43.75%; } }
+
+.grid__col-m-7 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-7 {
+      width: 43.75%; } }
+
+.grid__offset-7 {
+  margin-left: 43.75%; }
 
 .grid__col-8 {
   float: left;
-  width: 50%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-8 {
-      width: 100%; } }
+      width: 50%; } }
+
+.grid__col-m-8 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-8 {
+      width: 50%; } }
+
+.grid__offset-8 {
+  margin-left: 50%; }
 
 .grid__col-9 {
   float: left;
-  width: 56.25%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-9 {
-      width: 100%; } }
+      width: 56.25%; } }
+
+.grid__col-m-9 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-9 {
+      width: 56.25%; } }
+
+.grid__offset-9 {
+  margin-left: 56.25%; }
 
 .grid__col-10 {
   float: left;
-  width: 62.5%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-10 {
-      width: 100%; } }
+      width: 62.5%; } }
+
+.grid__col-m-10 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-10 {
+      width: 62.5%; } }
+
+.grid__offset-10 {
+  margin-left: 62.5%; }
 
 .grid__col-11 {
   float: left;
-  width: 68.75%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-11 {
-      width: 100%; } }
+      width: 68.75%; } }
+
+.grid__col-m-11 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-11 {
+      width: 68.75%; } }
+
+.grid__offset-11 {
+  margin-left: 68.75%; }
 
 .grid__col-12 {
   float: left;
-  width: 75%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-12 {
-      width: 100%; } }
+      width: 75%; } }
+
+.grid__col-m-12 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-12 {
+      width: 75%; } }
+
+.grid__offset-12 {
+  margin-left: 75%; }
 
 .grid__col-13 {
   float: left;
-  width: 81.25%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-13 {
-      width: 100%; } }
+      width: 81.25%; } }
+
+.grid__col-m-13 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-13 {
+      width: 81.25%; } }
+
+.grid__offset-13 {
+  margin-left: 81.25%; }
 
 .grid__col-14 {
   float: left;
-  width: 87.5%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-14 {
-      width: 100%; } }
+      width: 87.5%; } }
+
+.grid__col-m-14 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-14 {
+      width: 87.5%; } }
+
+.grid__offset-14 {
+  margin-left: 87.5%; }
 
 .grid__col-15 {
   float: left;
-  width: 93.75%; }
-  @media only screen and (max-width: 63.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
     .grid__col-15 {
-      width: 100%; } }
+      width: 93.75%; } }
+
+.grid__col-m-15 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-15 {
+      width: 93.75%; } }
+
+.grid__offset-15 {
+  margin-left: 93.75%; }
 
 .grid__col-16 {
   float: left;
   width: 100%; }
-  @media only screen and (max-width: 63.75em) {
+  @media only screen and (min-width: 768px) {
     .grid__col-16 {
       width: 100%; } }
 
-.grid__col-offset-1 {
-  margin-left: 6.25%; }
+.grid__col-m-16 {
+  float: left; }
+  @media only screen and (min-width: 600px) {
+    .grid__col-m-16 {
+      width: 100%; } }
 
-.grid__col-offset-2 {
-  margin-left: 12.5%; }
-
-.grid__col-offset-3 {
-  margin-left: 18.75%; }
-
-.grid__col-offset-4 {
-  margin-left: 25%; }
-
-.grid__col-offset-5 {
-  margin-left: 31.25%; }
-
-.grid__col-offset-6 {
-  margin-left: 37.5%; }
-
-.grid__col-offset-7 {
-  margin-left: 43.75%; }
-
-.grid__col-offset-8 {
-  margin-left: 50%; }
-
-.grid__col-offset-9 {
-  margin-left: 56.25%; }
-
-.grid__col-offset-10 {
-  margin-left: 62.5%; }
-
-.grid__col-offset-11 {
-  margin-left: 68.75%; }
-
-.grid__col-offset-12 {
-  margin-left: 75%; }
-
-.grid__col-offset-13 {
-  margin-left: 81.25%; }
-
-.grid__col-offset-14 {
-  margin-left: 87.5%; }
-
-.grid__col-offset-15 {
-  margin-left: 93.75%; }
-
-.grid__col-offset-16 {
+.grid__offset-16 {
   margin-left: 100%; }
+
+.grid {
+  /*
+	[class*="col-"] {
+
+	}
+	*/ }
 
 .button {
   display: inline-block;
@@ -1187,5 +1290,27 @@ top: 50%;
   to {
     top: 0;
     opacity: 1; } }
+
+.form__wrapper {
+  width: 100%;
+  padding: 7px 0; }
+
+.form__label {
+  width: 20%;
+  min-width: 100px; }
+  .form__label--required:after {
+    content: '*';
+    color: #ed1c24; }
+
+.form__icon {
+  color: #333333;
+  background-color: #d0d0d0;
+  padding: 7px 12px; }
+  .form__icon--radius-left {
+    border-top-left-radius: 0.25em;
+    border-bottom-left-radius: 0.25em; }
+  .form__icon--radius-right {
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em; }
 
 /*# sourceMappingURL=map/awesome-bemcss.css.map */
