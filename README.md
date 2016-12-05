@@ -8,9 +8,7 @@ Simple CSS Framework with BEM CSS convention implementation
 <a href="https://mazipan.github.io/awesome-bemcss/demo/">https://mazipan.github.io/awesome-bemcss/demo/</a>
 
 <h3>Stable Release</h3>
-- <a href="https://github.com/mazipan/awesome-bemcss/releases/tag/v0.0.2">v.0.0.2</a>
-- <a href="https://github.com/mazipan/awesome-bemcss/releases/tag/v0.0.1">v.0.0.1</a>
-- <a href="https://github.com/mazipan/awesome-bemcss/releases">See all releases</a>
+- <a href="https://github.com/mazipan/awesome-bemcss/releases">See all stable releases here</a>
 
 <h3>Supported Component (in alphabetical order)</h3>
 - alert 
@@ -40,7 +38,6 @@ Simple CSS Framework with BEM CSS convention implementation
 - <code>awesome-bemcss.scss</code> will produce class
 - If you fluent with pre-processor SASS, I suggest using <code>_awesome-bemcss.scss</code>
 - In <code>demo</code> folder is demo file for sample using this framework, include cheatsheet
-- Demo using <strong>silent extends</strong> and using SASS in <code>src</code> with file <code>demo.scss</code>
 
 </br>
 Hope will usefull for you all.</br>
