@@ -15,6 +15,7 @@ Simple CSS Framework with BEM CSS convention implementation
 - button (basic, outline, radius, dropdown)
 - card
 - checkbox (black and blue theme)
+- form 
 - grid system (traditional grid and flex)
 - modal (white and blue theme)
 - pagination (basic and radius)
