@@ -1,7 +1,7 @@
 {
   "name": "awesome-bemcss",
   "description": "Lightweight CSS framework that build in top of SASS with BEM CSS convention as alternative of Twitter Bootstrap.",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "keywords": [
     "css",
     "bem",
@@ -17,6 +17,7 @@
     "build": "grunt --verbose",
     "test": "mocha"
   },
+  "style": "dist/awesome-bemcss.min.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/mazipan/awesome-bemcss.git"

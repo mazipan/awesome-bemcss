@@ -1,7 +1,7 @@
 /* 
  *   Name        : awesome-bemcss 
- *   Version     : 0.0.3 
- *   Build Time  : 2016-12-08 11:47 
+ *   Version     : 0.0.6 
+ *   Build Time  : 2016-12-08 12:27 
  *   Author      : Irfan Maulana 
  *   Github Repo : https://github.com/mazipan/awesome-bemcss 
  */
