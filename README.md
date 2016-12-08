@@ -3,7 +3,6 @@ Simple CSS Framework with BEM CSS convention implementation
 
 <h3>Preview</h3>
 <a href="http://i1176.photobucket.com/albums/x322/mazipanneh/awesome-bemcss_zpsrlpgn4yj.png">http://i1176.photobucket.com/albums/x322/mazipanneh/awesome-bemcss_zpsrlpgn4yj.png</a>
-<img src="http://i1176.photobucket.com/albums/x322/mazipanneh/awesome-bemcss_zpsrlpgn4yj.png" />
 
 <h3>Download</h3>
 - <a href="https://github.com/mazipan/awesome-bemcss/releases">Download via github release</a>

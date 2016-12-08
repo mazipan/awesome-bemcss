@@ -153,15 +153,35 @@
             </p>
 
             <h4>How to use</h4>
-<pre><code class="language-markup">
+
+
+<b>Using CSS Native : </b> 
+<pre>
+<code class="language-markup">
 &lt;!-- awesome-bemcss css depedency --&gt;
-&lt;link  rel="stylesheet" href="{URL_PATH}/css/awesome-bemcss.min.css" rel="stylesheet"  /&gt;
+&lt;link  rel="stylesheet" href="{URL_PATH}/css/awesome-bemcss.min.css" rel="stylesheet"/&gt;
 
 &lt;!-- jquery library --&gt;
 &lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
 
 &lt;!-- awesome-bemcss js depedency --&gt;
-&lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;</code>
+</pre>
+
+<b>Using SASS Import : </b>
+<pre>
+<code class="language-markup">
+&lt;!-- jquery library --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- awesome-bemcss js depedency --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- in your sass file --&gt;
+@import "src/scss/_awesome-bemcss";
+</code>
+</pre>
+
           </section>
 
           <section class="content__typography" id="typography">
