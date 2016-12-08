@@ -8,4 +8,8 @@
     {
         @extend %select--radius;
     }
+
+    &--shadow{
+        @extend %select--shadow !optional;
+    }
 }

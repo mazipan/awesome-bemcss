@@ -1,18 +1,39 @@
 {
   "name": "awesome-bemcss",
-  "version": "0.0.1",
-  "private": false,
-  "author-name": "irfan maulana",
-  "author-mail": "mazipanneh@gmail.com",
+  "description": "Lightweight CSS framework that build in top of SASS with BEM CSS convention as alternative of Twitter Bootstrap.",
+  "version": "0.0.3",
+  "keywords": [
+    "css",
+    "bem",
+    "bem css",
+    "sass",
+    "front end",
+    "framework"
+  ],
+  "homepage": "https://mazipan.github.io/awesome-bemcss/demo/",
+  "author": "Irfan Maulana (https://github.com/mazipan/)",
   "scripts": {
+    "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./grunt/npm-shrinkwrap.json",
     "build": "grunt --verbose"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazipan/awesome-bemcss.git"
+  },  
+  "bugs": {
+    "url": "https://github.com/mazipan/awesome-bemcss/issues"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT",
   "dependencies": {
     
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "grunt": "^1.0.1",
+    "grunt-cli": "^1.1.0",
     "grunt-banner": "^0.6.0",
     "grunt-concurrent": "^2.2.1",
     "grunt-contrib-clean": "^1.0.0",

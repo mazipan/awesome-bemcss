@@ -36,4 +36,8 @@
     {
         @extend %textfield--radius-right;
     }
+
+    &--shadow{
+        @extend %textfield--shadow !optional;
+    }
 }

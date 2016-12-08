@@ -119,7 +119,13 @@ module.exports = function (grunt) {
                 taskName: {
                   options: {
                     position: 'top',
-                    banner: '/*! awesome-bemcss v<%= pkg.version %> build <%= grunt.template.today("yyyy-mm-dd hh:MM") %> */',
+                    banner: '/* \n '+
+                            '*   Name        : awesome-bemcss \n '+
+                            '*   Version     : <%= pkg.version %> \n '+
+                            '*   Build Time  : <%= grunt.template.today("yyyy-mm-dd hh:MM") %> \n '+
+                            '*   Author      : Irfan Maulana \n '+
+                            '*   Github Repo : https://github.com/mazipan/awesome-bemcss \n '+
+                            '*/',
                     linebreak: true
                   },
                   files: {
