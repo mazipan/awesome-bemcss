@@ -1,3 +1,4 @@
+/* line 1, D:/Github/awesome-bemcss-github/src/_scss/helpers/_list.scss */
 .nav__tabs {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@
  */
 /* Document
    ========================================================================== */
+/* line 13, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -27,12 +29,14 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
+/* line 27, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 body {
   margin: 0; }
 
 /**
  * Add the correct display in IE 9-.
  */
+/* line 35, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 article,
 aside,
 footer,
@@ -45,6 +49,7 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
+/* line 49, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -55,6 +60,7 @@ h1 {
  * Add the correct display in IE 9-.
  * 1. Add the correct display in IE.
  */
+/* line 62, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 figcaption,
 figure,
 main {
@@ -64,6 +70,7 @@ main {
 /**
  * Add the correct margin in IE 8.
  */
+/* line 72, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 figure {
   margin: 1em 40px; }
 
@@ -71,6 +78,7 @@ figure {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+/* line 81, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -83,6 +91,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+/* line 92, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -95,6 +104,7 @@ pre {
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
+/* line 105, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 a {
   background-color: transparent;
   /* 1 */
@@ -105,6 +115,7 @@ a {
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
+/* line 115, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 a:active,
 a:hover {
   outline-width: 0; }
@@ -113,6 +124,7 @@ a:hover {
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+/* line 125, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -124,6 +136,7 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
+/* line 135, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 b,
 strong {
   font-weight: inherit; }
@@ -131,6 +144,7 @@ strong {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+/* line 144, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 b,
 strong {
   font-weight: bolder; }
@@ -139,6 +153,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+/* line 154, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 code,
 kbd,
 samp {
@@ -150,12 +165,14 @@ samp {
 /**
  * Add the correct font style in Android 4.3-.
  */
+/* line 165, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 dfn {
   font-style: italic; }
 
 /**
  * Add the correct background and color in IE 9-.
  */
+/* line 173, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 mark {
   background-color: #ff0;
   color: #000; }
@@ -163,6 +180,7 @@ mark {
 /**
  * Add the correct font size in all browsers.
  */
+/* line 182, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 small {
   font-size: 80%; }
 
@@ -170,6 +188,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+/* line 191, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -177,9 +196,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+/* line 199, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
+/* line 203, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 sup {
   top: -0.5em; }
 
@@ -188,6 +209,7 @@ sup {
 /**
  * Add the correct display in IE 9-.
  */
+/* line 214, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 audio,
 video {
   display: inline-block; }
@@ -195,6 +217,7 @@ video {
 /**
  * Add the correct display in iOS 4-7.
  */
+/* line 223, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -202,12 +225,14 @@ audio:not([controls]) {
 /**
  * Remove the border on images inside links in IE 10-.
  */
+/* line 232, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 img {
   border-style: none; }
 
 /**
  * Hide the overflow in IE.
  */
+/* line 240, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -217,6 +242,7 @@ svg:not(:root) {
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
+/* line 252, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 button,
 input,
 optgroup,
@@ -235,6 +261,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
+/* line 268, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 button,
 input {
   /* 1 */
@@ -244,6 +271,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
+/* line 278, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 button,
 select {
   /* 1 */
@@ -254,6 +282,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
+/* line 289, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -264,6 +293,7 @@ html [type="button"],
 /**
  * Remove the inner border and padding in Firefox.
  */
+/* line 300, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -274,6 +304,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
+/* line 312, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -283,6 +314,7 @@ button:-moz-focusring,
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
+/* line 323, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -294,6 +326,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
+/* line 336, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -312,6 +345,7 @@ legend {
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+/* line 350, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 progress {
   display: inline-block;
   /* 1 */
@@ -321,6 +355,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE.
  */
+/* line 359, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -328,6 +363,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
+/* line 368, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -338,6 +374,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
+/* line 378, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -346,6 +383,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
+/* line 388, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -355,6 +393,7 @@ textarea {
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
+/* line 397, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -363,6 +402,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+/* line 407, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -375,6 +415,7 @@ textarea {
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
+/* line 420, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 details,
 menu {
   display: block; }
@@ -382,6 +423,7 @@ menu {
 /*
  * Add the correct display in all browsers.
  */
+/* line 429, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 summary {
   display: list-item; }
 
@@ -390,12 +432,14 @@ summary {
 /**
  * Add the correct display in IE 9-.
  */
+/* line 440, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 canvas {
   display: inline-block; }
 
 /**
  * Add the correct display in IE.
  */
+/* line 448, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 template {
   display: none; }
 
@@ -404,9 +448,11 @@ template {
 /**
  * Add the correct display in IE 10-.
  */
+/* line 459, D:/Github/awesome-bemcss-github/src/_scss/_normalize.scss */
 [hidden] {
   display: none; }
 
+/* line 1, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
 html {
   box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -416,76 +462,97 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent; }
 
+/* line 8, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
 *, *:before, *:after {
   box-sizing: inherit; }
 
+/* line 11, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
 body {
   font-size: 1.3rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
+/* line 16, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
 a {
   color: #068AC9;
   text-decoration: none; }
+  /* line 20, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
   a:hover, a:focus {
     text-decoration: underline; }
 
+/* line 25, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
 code, kbd, pre, samp {
   background-color: #eaeaea;
   padding: .1em .5em;
   border-radius: .1em; }
 
+/* line 31, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
 blockquote {
   padding: 10px;
   margin: 0 0 20px;
   font-size: 1.6rem;
   border-left: 5px solid #eee; }
 
+/* line 38, D:/Github/awesome-bemcss-github/src/_scss/_base.scss */
 textarea {
   resize: none; }
 
+/* line 1, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .site__main {
   *zoom: 1; }
+  /* line 4, D:/Github/awesome-bemcss-github/src/_scss/mixins/_clearfix.scss */
   .site__main:before, .site__main:after {
     display: table;
     content: ' '; }
+  /* line 10, D:/Github/awesome-bemcss-github/src/_scss/mixins/_clearfix.scss */
   .site__main:after {
     clear: both; }
 
+/* line 5, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .main__row, .content__wrapper {
   *zoom: 1;
   margin: 0 auto;
   max-width: 92.308em; }
+  /* line 4, D:/Github/awesome-bemcss-github/src/_scss/mixins/_clearfix.scss */
   .main__row:before, .content__wrapper:before, .main__row:after, .content__wrapper:after {
     display: table;
     content: ' '; }
+  /* line 10, D:/Github/awesome-bemcss-github/src/_scss/mixins/_clearfix.scss */
   .main__row:after, .content__wrapper:after {
     clear: both; }
 
+/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .main__nav {
   float: left;
   width: 100%; }
   @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .main__nav {
       width: 12.5%; } }
 
+/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .content__col-sm {
   float: left;
   width: 100%; }
   @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .content__col-sm {
       width: 18.75%; } }
 
+/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .content__col-lg {
   float: left;
   width: 100%; }
   @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .content__col-lg {
       width: 62.5%; } }
 
+/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .main__content {
   float: left;
   width: 100%; }
   @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .main__content {
       width: 87.5%; } }
 
@@ -526,41 +593,50 @@ top: 50%;
 * every block should in seperate file 
 * for demo I combine into one file
 */
+/* line 8, D:/Github/awesome-bemcss-github/src/demo.scss */
 .site {
   margin: 0; }
+  /* line 12, D:/Github/awesome-bemcss-github/src/demo.scss */
   .site__main {
     margin-top: 60px; }
 
 /*
 -- MAIN BLOCK --
 */
+/* line 24, D:/Github/awesome-bemcss-github/src/demo.scss */
 .main__jumbotron {
   width: 100%;
   height: 500px;
   background-color: #068AC9; }
+  /* line 29, D:/Github/awesome-bemcss-github/src/demo.scss */
   .main__jumbotron h1 {
     color: #fff;
     font-style: italic;
     font-size: 5rem; }
+  /* line 34, D:/Github/awesome-bemcss-github/src/demo.scss */
   .main__jumbotron h2 {
     color: #fff;
     font-style: italic;
     font-weight: normal; }
+  /* line 40, D:/Github/awesome-bemcss-github/src/demo.scss */
   .main__jumbotron-wrapper {
     margin: 0 auto;
     padding-top: 10em;
     padding-left: 3em; }
 
 @media screen and (max-width: 640px) {
+  /* line 49, D:/Github/awesome-bemcss-github/src/demo.scss */
   .main__nav {
     display: none; } }
 
+/* line 58, D:/Github/awesome-bemcss-github/src/demo.scss */
 .main__content {
   padding: 20px; }
 
 /*
 -- HEADER BLOCK --
 */
+/* line 69, D:/Github/awesome-bemcss-github/src/demo.scss */
 .header {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
   position: fixed;
@@ -569,6 +645,7 @@ top: 50%;
   width: 100%;
   height: 60px;
   background: rgba(255, 255, 255, 0.95294); }
+  /* line 80, D:/Github/awesome-bemcss-github/src/demo.scss */
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -579,6 +656,7 @@ top: 50%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  /* line 85, D:/Github/awesome-bemcss-github/src/demo.scss */
   .header__brand {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -590,22 +668,28 @@ top: 50%;
         -ms-flex-align: center;
             align-items: center;
     margin: .2em; }
+    /* line 92, D:/Github/awesome-bemcss-github/src/demo.scss */
     .header__brand img {
       height: 45px; }
+  /* line 97, D:/Github/awesome-bemcss-github/src/demo.scss */
   .header__title {
     font-style: italic;
     font-size: 1.8rem;
     font-weight: 500;
     margin-left: .5em; }
+  /* line 103, D:/Github/awesome-bemcss-github/src/demo.scss */
   .header__nav {
     margin-right: 2em; }
+    /* line 106, D:/Github/awesome-bemcss-github/src/demo.scss */
     .header__nav a {
       color: #4d4d4d;
       text-decoration: none;
       font-size: 1.2rem; }
+      /* line 112, D:/Github/awesome-bemcss-github/src/demo.scss */
       .header__nav a:hover {
         color: #1a1a1a; }
     @media screen and (max-width: 640px) {
+      /* line 103, D:/Github/awesome-bemcss-github/src/demo.scss */
       .header__nav {
         display: none; } }
 
@@ -615,180 +699,216 @@ top: 50%;
 /*
 -- CONTENT BLOCK --
 */
+/* line 140, D:/Github/awesome-bemcss-github/src/demo.scss */
 .content__title {
   padding: 7px 0;
   border-bottom: 1px solid #B6B6B6; }
 
+/* line 144, D:/Github/awesome-bemcss-github/src/demo.scss */
 .content__wrapper {
   padding: 10px 0; }
 
 /*
 -- GRID BLOCK --
 */
+/* line 161, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__flex, .grid__row {
   margin: 2px 0; }
 
+/* line 164, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__item {
   width: 100%;
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-1 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-2 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-3 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-4 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-5 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-6 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-7 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-8 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-9 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-10 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-11 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-12 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-13 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-14 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-15 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__col-16 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-1 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-2 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-3 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-4 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-5 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-6 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-7 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-8 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-9 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-10 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-11 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-12 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-13 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-14 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-15 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
+/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-16 {
   padding: 1em 0;
   border: 1px solid #B6B6B6;
@@ -797,14 +917,17 @@ top: 50%;
 /*
 -- FOR DEMO ONLY --
 */
+/* line 193, D:/Github/awesome-bemcss-github/src/demo.scss */
 .button {
   margin: .1em; }
 
+/* line 197, D:/Github/awesome-bemcss-github/src/demo.scss */
 .popover {
   text-align: center;
   padding: 1em 0;
   border: 1px solid #B6B6B6; }
 
+/* line 203, D:/Github/awesome-bemcss-github/src/demo.scss */
 .card {
   padding: 1em 0;
   display: inline-block;
@@ -816,25 +939,30 @@ top: 50%;
 /*
 -- FOOTER BLOCK --
 */
+/* line 215, D:/Github/awesome-bemcss-github/src/demo.scss */
 .footer {
   margin: 0 auto;
   padding: 20px 0;
   background: #068AC9;
   color: #fff; }
+  /* line 222, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__wrapper {
     text-align: center; }
+  /* line 226, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__text {
     font-size: .9rem; }
+  /* line 230, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__list {
     display: block;
     margin: 0;
     padding: 0;
     list-style: none; }
+  /* line 237, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__icon {
     display: inline-block;
     margin: 0 5px;
     font-size: 1.6rem; }
+    /* line 243, D:/Github/awesome-bemcss-github/src/demo.scss */
     .footer__icon i {
       color: #fff; }
-
-/*# sourceMappingURL=map/demo.css.map */
+/*# sourceMappingURL=demo.css.map */

@@ -23,7 +23,8 @@ module.exports = function (grunt) {
             sass: {
                 dist: {
                     options:{
-                        sourcemap: 'auto',
+                        sourceMap: true,
+                        sourceComments: true,
                         style: 'compact',
                         update: true
                     },
@@ -42,7 +43,7 @@ module.exports = function (grunt) {
                 options: {
                   map: {
                       inline: false,
-                      annotation: 'dist/map/'
+                      annotation: 'dist/'
                   },
 
                   processors: [
