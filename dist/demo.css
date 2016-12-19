@@ -527,7 +527,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .main__nav {
-      width: 12.5%; } }
+      width: 16.6666666667%; } }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .content__col-sm {
@@ -536,7 +536,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .content__col-sm {
-      width: 18.75%; } }
+      width: 33.3333333333%; } }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .content__col-lg {
@@ -545,7 +545,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .content__col-lg {
-      width: 62.5%; } }
+      width: 66.6666666667%; } }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .main__content {
@@ -554,7 +554,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .main__content {
-      width: 87.5%; } }
+      width: 83.3333333333%; } }
 
 /*
 border: 1px solid #00d1b2;
@@ -794,30 +794,6 @@ top: 50%;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
-/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__col-13 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
-/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__col-14 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
-/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__col-15 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
-/* line 175, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__col-16 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
 /* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
 .grid__offset-1 {
   padding: 1em 0;
@@ -890,30 +866,6 @@ top: 50%;
   border: 1px solid #B6B6B6;
   text-align: center; }
 
-/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__offset-13 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
-/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__offset-14 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
-/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__offset-15 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
-/* line 182, D:/Github/awesome-bemcss-github/src/demo.scss */
-.grid__offset-16 {
-  padding: 1em 0;
-  border: 1px solid #B6B6B6;
-  text-align: center; }
-
 /*
 -- FOR DEMO ONLY --
 */
@@ -929,40 +881,38 @@ top: 50%;
 
 /* line 203, D:/Github/awesome-bemcss-github/src/demo.scss */
 .card {
-  padding: 1em 0;
   display: inline-block;
   width: 25%;
-  margin-right: 1em;
-  height: 150px;
-  background-color: #068AC9; }
+  margin: 1em 0 0 1em;
+  height: 150px; }
 
 /*
 -- FOOTER BLOCK --
 */
-/* line 215, D:/Github/awesome-bemcss-github/src/demo.scss */
+/* line 213, D:/Github/awesome-bemcss-github/src/demo.scss */
 .footer {
   margin: 0 auto;
   padding: 20px 0;
   background: #068AC9;
   color: #fff; }
-  /* line 222, D:/Github/awesome-bemcss-github/src/demo.scss */
+  /* line 220, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__wrapper {
     text-align: center; }
-  /* line 226, D:/Github/awesome-bemcss-github/src/demo.scss */
+  /* line 224, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__text {
     font-size: .9rem; }
-  /* line 230, D:/Github/awesome-bemcss-github/src/demo.scss */
+  /* line 228, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__list {
     display: block;
     margin: 0;
     padding: 0;
     list-style: none; }
-  /* line 237, D:/Github/awesome-bemcss-github/src/demo.scss */
+  /* line 235, D:/Github/awesome-bemcss-github/src/demo.scss */
   .footer__icon {
     display: inline-block;
     margin: 0 5px;
     font-size: 1.6rem; }
-    /* line 243, D:/Github/awesome-bemcss-github/src/demo.scss */
+    /* line 241, D:/Github/awesome-bemcss-github/src/demo.scss */
     .footer__icon i {
       color: #fff; }
 /*# sourceMappingURL=demo.css.map */

@@ -36,8 +36,8 @@
         <meta name="twitter:image:height" content="500"/>
         <meta name="twitter:domain" content="https://mazipan.github.io/awesome-bemcss/demo/"/>
         
-        <link rel="stylesheet" type="text/css" href="../dist/awesome-bemcss.min.css"> 
-        <link rel="stylesheet" type="text/css" href="../dist/demo.min.css"> 
+        <link rel="stylesheet" type="text/css" href="../dist/awesome-bemcss.css"> 
+        <link rel="stylesheet" type="text/css" href="../dist/demo.css"> 
         <link rel="stylesheet" type="text/css" href="https://mazipan.github.io/library/prism.min.css"> 
 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -161,24 +161,18 @@
 &lt;!-- awesome-bemcss css depedency --&gt;
 &lt;link  rel="stylesheet" href="{URL_PATH}/css/awesome-bemcss.min.css" rel="stylesheet"/&gt;
 
-&lt;!-- jquery library --&gt;
+&lt;!-- jquery library {optional - if you want use the script} --&gt;
 &lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
 
-&lt;!-- awesome-bemcss js depedency --&gt;
+&lt;!-- awesome-bemcss js depedency - {optional - if you want use the script} --&gt;
 &lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;</code>
 </pre>
 
 <b>Using SASS Import : </b>
 <pre>
 <code class="language-markup">
-&lt;!-- jquery library --&gt;
-&lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- awesome-bemcss js depedency --&gt;
-&lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- in your sass file --&gt;
-@import "src/scss/_awesome-bemcss";
+&lt;!-- import from your sass file --&gt;
+@import "./awesome-bemcss/src/scss/_awesome-bemcss";
 </code>
 </pre>
 
@@ -225,14 +219,14 @@
             <h2 class="content__title">Grids</h2>          
             <h4>Row And Columns</h4>
             <div class="content__wrapper grid">
-              <div class="grid__row">grid__row (total col in row = 16)</div>
+              <div class="grid__row">grid__row (total col in row = 12)</div>
               <div class="grid__row">
-                <div class="grid__col-16">grid__col-16</div>
+                <div class="grid__col-12">grid__col-12</div>
               </div>           
               <div class="grid__row">
                 <div class="grid__col-3">grid__col-3</div>
                 <div class="grid__col-3">grid__col-3</div>
-                <div class="grid__col-10">grid__col-10</div>
+                <div class="grid__col-6">grid__col-10</div>
               </div>
               <div class="grid__row">
                 <div class="grid__offset-1">grid__offset-1</div>
@@ -248,14 +242,14 @@
 <pre><code class="language-markup">
 &lt;!-- snippet code for grid --&gt;
 &lt;div class="grid"&gt;
-  &lt;div class="grid__row"&gt;grid__row (total col in row = 16)&lt;/div&gt;
+  &lt;div class="grid__row"&gt;grid__row (total col in row = 12)&lt;/div&gt;
   &lt;div class="grid__row"&gt;
-    &lt;div class="grid__col-16"&gt;grid__col-16&lt;/div&gt;
+    &lt;div class="grid__col-12"&gt;grid__col-12&lt;/div&gt;
   &lt;/div&gt; 
   &lt;div class="grid__row"&gt;
     &lt;div class="grid__col-3"&gt;grid__col-3&lt;/div&gt;
     &lt;div class="grid__col-3"&gt;grid__col-3&lt;/div&gt;
-    &lt;div class="grid__col-10"&gt;grid__col-10&lt;/div&gt;
+    &lt;div class="grid__col-6"&gt;grid__col-6&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="grid__row"&gt;
     &lt;div class="grid__offset-1"&gt;grid__offset-1&lt;/div&gt;
@@ -754,22 +748,142 @@
 
           <section class="content__card" id="card">
             <h2 class="content__title">Card</h2>
+            
+            <h4>Card Flat</h4>
             <div class="content__wrapper"> 
-                <div class="card">card</div>
-                <div class="card">card</div>
-                <div class="card">card</div>
+                
+                <div class="card card--green">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--red">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--blue">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--orange">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--gray">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
             </div>
+
+            <h4>Card Radius</h4>
             <div class="content__wrapper"> 
-                <div class="card card--radius">card card--radius</div>
-                <div class="card card--radius">card card--radius</div>
-                <div class="card card--radius">card card--radius</div>
+                
+                <div class="card card--green card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--red card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--blue card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--orange card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--gray card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
             </div>
 
             <div class="content__wrapper">
 <pre><code class="language-markup">
 &lt;!-- snippet code for card --&gt;
-&lt;div class="card"&gt;card&lt;/div&gt;
-&lt;div class="card card--radius"&gt;card card--radius&lt;/div&gt;</code></pre>
+&lt;div class="card card--green"&gt;card card--green&lt;/div&gt;
+&lt;div class="card card--green card--radius"&gt;card card--gray card--radius&lt;/div&gt;</code></pre>
             </div>
 
           </section>

@@ -521,7 +521,7 @@ textarea {
     clear: both; }
 
 /* line 11, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__flex, .form__group {
+.grid__flex, .card--green > .card__header, .card--red > .card__header, .card--blue > .card__header, .card--orange > .card__header, .card--gray > .card__header, .card--white > .card__header, .form__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,7 +539,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-1 {
-      width: 6.25%; } }
+      width: 8.3333333333%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-1 {
@@ -547,11 +547,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-1 {
-      width: 6.25%; } }
+      width: 8.3333333333%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-1 {
-  margin-left: 6.25%; }
+  margin-left: 8.3333333333%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-2 {
@@ -560,7 +560,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-2 {
-      width: 12.5%; } }
+      width: 16.6666666667%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-2 {
@@ -568,11 +568,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-2 {
-      width: 12.5%; } }
+      width: 16.6666666667%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-2 {
-  margin-left: 12.5%; }
+  margin-left: 16.6666666667%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-3 {
@@ -581,7 +581,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-3 {
-      width: 18.75%; } }
+      width: 25%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-3 {
@@ -589,11 +589,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-3 {
-      width: 18.75%; } }
+      width: 25%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-3 {
-  margin-left: 18.75%; }
+  margin-left: 25%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-4 {
@@ -602,7 +602,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-4 {
-      width: 25%; } }
+      width: 33.3333333333%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-4 {
@@ -610,11 +610,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-4 {
-      width: 25%; } }
+      width: 33.3333333333%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-4 {
-  margin-left: 25%; }
+  margin-left: 33.3333333333%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-5 {
@@ -623,7 +623,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-5 {
-      width: 31.25%; } }
+      width: 41.6666666667%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-5 {
@@ -631,11 +631,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-5 {
-      width: 31.25%; } }
+      width: 41.6666666667%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-5 {
-  margin-left: 31.25%; }
+  margin-left: 41.6666666667%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-6 {
@@ -644,7 +644,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-6 {
-      width: 37.5%; } }
+      width: 50%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-6 {
@@ -652,11 +652,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-6 {
-      width: 37.5%; } }
+      width: 50%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-6 {
-  margin-left: 37.5%; }
+  margin-left: 50%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-7 {
@@ -665,7 +665,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-7 {
-      width: 43.75%; } }
+      width: 58.3333333333%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-7 {
@@ -673,11 +673,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-7 {
-      width: 43.75%; } }
+      width: 58.3333333333%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-7 {
-  margin-left: 43.75%; }
+  margin-left: 58.3333333333%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-8 {
@@ -686,7 +686,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-8 {
-      width: 50%; } }
+      width: 66.6666666667%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-8 {
@@ -694,11 +694,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-8 {
-      width: 50%; } }
+      width: 66.6666666667%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-8 {
-  margin-left: 50%; }
+  margin-left: 66.6666666667%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-9 {
@@ -707,7 +707,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-9 {
-      width: 56.25%; } }
+      width: 75%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-9 {
@@ -715,11 +715,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-9 {
-      width: 56.25%; } }
+      width: 75%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-9 {
-  margin-left: 56.25%; }
+  margin-left: 75%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-10 {
@@ -728,7 +728,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-10 {
-      width: 62.5%; } }
+      width: 83.3333333333%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-10 {
@@ -736,11 +736,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-10 {
-      width: 62.5%; } }
+      width: 83.3333333333%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-10 {
-  margin-left: 62.5%; }
+  margin-left: 83.3333333333%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-11 {
@@ -749,7 +749,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-11 {
-      width: 68.75%; } }
+      width: 91.6666666667%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-11 {
@@ -757,11 +757,11 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-11 {
-      width: 68.75%; } }
+      width: 91.6666666667%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-11 {
-  margin-left: 68.75%; }
+  margin-left: 91.6666666667%; }
 
 /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-12 {
@@ -770,7 +770,7 @@ textarea {
   @media only screen and (min-width: 768px) {
     /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-12 {
-      width: 75%; } }
+      width: 100%; } }
 
 /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__col-m-12 {
@@ -778,94 +778,10 @@ textarea {
   @media only screen and (min-width: 600px) {
     /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
     .grid__col-m-12 {
-      width: 75%; } }
+      width: 100%; } }
 
 /* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
 .grid__offset-12 {
-  margin-left: 75%; }
-
-/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-13 {
-  float: left;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-13 {
-      width: 81.25%; } }
-
-/* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-m-13 {
-  float: left; }
-  @media only screen and (min-width: 600px) {
-    /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-m-13 {
-      width: 81.25%; } }
-
-/* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__offset-13 {
-  margin-left: 81.25%; }
-
-/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-14 {
-  float: left;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-14 {
-      width: 87.5%; } }
-
-/* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-m-14 {
-  float: left; }
-  @media only screen and (min-width: 600px) {
-    /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-m-14 {
-      width: 87.5%; } }
-
-/* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__offset-14 {
-  margin-left: 87.5%; }
-
-/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-15 {
-  float: left;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-15 {
-      width: 93.75%; } }
-
-/* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-m-15 {
-  float: left; }
-  @media only screen and (min-width: 600px) {
-    /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-m-15 {
-      width: 93.75%; } }
-
-/* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__offset-15 {
-  margin-left: 93.75%; }
-
-/* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-16 {
-  float: left;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    /* line 22, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-16 {
-      width: 100%; } }
-
-/* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__col-m-16 {
-  float: left; }
-  @media only screen and (min-width: 600px) {
-    /* line 32, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-    .grid__col-m-16 {
-      width: 100%; } }
-
-/* line 41, D:/Github/awesome-bemcss-github/src/_scss/_components/_grids.scss */
-.grid__offset-16 {
   margin-left: 100%; }
 
 /* line 9, D:/Github/awesome-bemcss-github/src/_scss/components/_grids.scss */
@@ -1489,6 +1405,65 @@ top: 50%;
   /* line 9, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
   .card--radius {
     border-radius: 0.25em; }
+  /* line 14, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card--green {
+    border: 1px solid #00b25a; }
+    /* line 17, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+    .card--green > .card__header {
+      padding: 1em .5em;
+      background-color: #00b25a;
+      color: #ffffff; }
+  /* line 14, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card--red {
+    border: 1px solid #ed1c24; }
+    /* line 17, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+    .card--red > .card__header {
+      padding: 1em .5em;
+      background-color: #ed1c24;
+      color: #ffffff; }
+  /* line 14, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card--blue {
+    border: 1px solid #068AC9; }
+    /* line 17, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+    .card--blue > .card__header {
+      padding: 1em .5em;
+      background-color: #068AC9;
+      color: #ffffff; }
+  /* line 14, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card--orange {
+    border: 1px solid #FF5400; }
+    /* line 17, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+    .card--orange > .card__header {
+      padding: 1em .5em;
+      background-color: #FF5400;
+      color: #ffffff; }
+  /* line 14, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card--gray {
+    border: 1px solid #B6B6B6; }
+    /* line 17, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+    .card--gray > .card__header {
+      padding: 1em .5em;
+      background-color: #B6B6B6;
+      color: #333333; }
+  /* line 14, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card--white {
+    border: 1px solid #ffffff; }
+    /* line 17, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+    .card--white > .card__header {
+      padding: 1em .5em;
+      background-color: #ffffff;
+      color: #333333; }
+  /* line 29, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card__title {
+    font-size: 1.6rem;
+    font-weight: bold; }
+  /* line 34, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card__tools > i {
+    margin: 0 .5em;
+    cursor: pointer; }
+  /* line 39, D:/Github/awesome-bemcss-github/src/_scss/_components/_card.scss */
+  .card__content {
+    padding: 1em .5em; }
 
 /* line 1, D:/Github/awesome-bemcss-github/src/_scss/_components/_popover.scss */
 .popover {

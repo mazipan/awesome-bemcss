@@ -19,24 +19,18 @@ Using CSS Native :
 &lt;!-- awesome-bemcss css depedency --&gt;
 &lt;link  rel="stylesheet" href="{URL_PATH}/css/awesome-bemcss.min.css" rel="stylesheet"/&gt;
 
-&lt;!-- jquery library --&gt;
+&lt;!-- jquery library - {optional - if you want use the script} --&gt;
 &lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
 
-&lt;!-- awesome-bemcss js depedency --&gt;
+&lt;!-- awesome-bemcss js depedency {optional - if you want use the script} --&gt;
 &lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;</code>
 </pre>
 
 Using SASS Import : 
 <pre>
 <code class="language-markup">
-&lt;!-- jquery library --&gt;
-&lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- awesome-bemcss js depedency --&gt;
-&lt;script type="text/javascript" src="{URL_PATH}/js/awesome-bemcss.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- in your sass file --&gt;
-@import "src/scss/_awesome-bemcss";
+&lt;!-- import from your sass file --&gt;
+@import "./awesome-bemcss/src/scss/_awesome-bemcss";
 </code>
 </pre>
 
