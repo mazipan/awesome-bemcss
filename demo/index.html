@@ -1259,6 +1259,12 @@
           eventLabel: linkClick
         });
       }    
+
+      $(window).load(function(){
+        try{
+          _trackLink('demo awesome-bemcss', 'demo', 'visit directly');
+        }catch(err){}
+      });
   </script>
 
 </body>
